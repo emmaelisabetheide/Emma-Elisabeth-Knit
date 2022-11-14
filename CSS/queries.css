@@ -1,0 +1,416 @@
+/* **************************** */
+/* BELOW 1344px (smalles computers) */
+/* **************************** */
+
+@media (max-width: 85em) {
+  body {
+    max-width: 120rem;
+  }
+  .footer-section {
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+}
+
+/* **************************** */
+/* BELOW 1200px (Landscape tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  /* MAKES EVERYTHING IN REM SMALLER OR LARGER */
+  html {
+    font-size: 56.25%;
+  }
+
+  .footer-section {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .news-heading {
+    font-size: 9.6rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 1056px (smaller landscape tablets) */
+/* **************************** */
+@media (max-width: 66em) {
+  .pattern-card {
+    padding: 1.6rem;
+  }
+
+  .svenska::after,
+  .norsk::after,
+  .english::after {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.7rem;
+    top: 2%;
+    left: 3%;
+  }
+
+  .coming-soon::after {
+    letter-spacing: 0.3rem;
+    top: 12%;
+    right: -45%;
+  }
+
+  .page-heading {
+    margin-bottom: 6.4rem;
+  }
+
+  .btn--with-icon {
+    width: 70%;
+  }
+
+  .news-section {
+    padding: 4.8rem 0;
+  }
+}
+
+/* **************************** */
+/* BELOW 896px (Tablets) */
+/* **************************** */
+@media (max-width: 56em) {
+  .news-heading {
+    font-size: 8rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .heading-pattern-section {
+    font-size: 3.6rem;
+  }
+
+  .pattern-section {
+    padding: 4.8rem 0 8rem 0;
+  }
+
+  .btn-light-top {
+    font-size: 1.6rem;
+  }
+
+  .pattern {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .display-no-3 {
+    display: none;
+  }
+
+  .coming-soon::after {
+    top: 14%;
+    right: -35%;
+  }
+
+  .pattern-sheet {
+    padding: 2.4rem 0 4.8rem 0;
+  }
+
+  .footer {
+    padding: 9.6rem 0rem;
+  }
+
+  .nav-col {
+    line-height: 0.5rem;
+  }
+
+  .page-heading {
+    font-size: 4.8rem;
+  }
+
+  .main-section {
+    max-width: 100rem;
+  }
+
+  .page-section {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
+
+  .instagram-heading {
+    font-size: 2.4rem;
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .instagram-box {
+    padding-top: 2.4rem;
+  }
+
+  .page-text-box {
+    width: 75%;
+  }
+
+  .pattern-description {
+    padding-right: 0;
+  }
+
+  /* NEW MENU */
+
+  .new-menu {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .dropdown-list {
+    list-style: none;
+    line-height: 6rem;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    background-color: rgba(226, 228, 221, 0.95);
+    padding: 4rem 6rem;
+    color: #6d7856;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(-10px);
+    z-index: 1;
+    width: 40rem;
+  }
+
+  .btn-dropdown {
+    background-color: #fcfcfc;
+    border: none;
+  }
+
+  .dropdown-icon {
+    color: #6d7856;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+
+  .dropdown-icon:hover,
+  .dropdown-icon:focus {
+    color: #8a9378;
+  }
+
+  .icon-cart {
+    font-size: 2.2rem;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+}
+
+/* **************************** */
+/* BELOW 784px (smaller Tablets) */
+/* **************************** */
+@media (max-width: 49em) {
+  .pattern-info {
+    grid-column: 1 / -1;
+  }
+
+  .pattern-img-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pattern-img-other {
+    flex-direction: row;
+    width: 20%;
+  }
+  .btn--with-icon {
+    width: 80%;
+  }
+}
+
+/* **************************** */
+/* BELOW 704px (small Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .page-text-box {
+    width: 100%;
+  }
+
+  .page-heading {
+    font-size: 3.6rem;
+  }
+
+  .page-heading-secondary {
+    font-size: 1.6rem;
+  }
+
+  .instagram-heading {
+    font-size: 1.6rem;
+  }
+
+  .pattern-card {
+    padding: 1.2rem;
+  }
+
+  .pattern-card-heading {
+    font-size: 1.2rem;
+  }
+
+  .pattern-card-price {
+    font-size: 1.2rem;
+  }
+
+  .add-cart-icon,
+  .add-cart-icon:link,
+  .add-cart-icon:visited {
+    font-size: 1.6rem;
+  }
+
+  .page-section--flex {
+    gap: 2.4rem;
+  }
+
+  .pattern--margin {
+    margin: 0 4.8rem 2.4rem 4.8rem;
+  }
+
+  .coming-soon::after {
+    transform: none;
+    top: 65%;
+    right: -40%;
+    font-size: 1.2rem;
+    padding: 0.5rem 4rem;
+  }
+
+  .news-img-box img {
+    width: 100%;
+  }
+
+  .news-heading {
+    font-size: 6.4rem;
+  }
+
+  .filter {
+    width: 65rem;
+  }
+
+  .filter-heading {
+    font-size: 1.6rem;
+  }
+
+  .filter-item {
+    font-size: 1.2rem;
+  }
+
+  .level-icon {
+    height: 1.6rem;
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.4rem;
+  }
+
+  .footer {
+    padding: 6.4rem 6.4rem;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    justify-self: auto;
+  }
+
+  .logo-col {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+  .page-heading {
+    margin-bottom: 3.6rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 624px (big phones) */
+/* **************************** */
+@media (max-width: 39em) {
+  .news-heading {
+    font-size: 3.6rem;
+  }
+
+  .news-section {
+    padding: 2.4rem 0;
+  }
+
+  .news {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.4rem;
+  }
+
+  .coming-soon::after {
+    transform: none;
+    top: 65%;
+    right: -70%;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+
+  .filter-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 512px (big phones) */
+/* **************************** */
+@media (max-width: 34em) {
+  /* .pattern {
+    grid-template-columns: 1fr;
+  } */
+
+  .dropsdown-menu {
+  }
+
+  .news {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news-heading {
+    margin-bottom: 2.4rem;
+  }
+
+  .news-sticker {
+    font-size: 1.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .pattern-section {
+    padding: 3.6rem 0 4.8rem 0;
+  }
+
+  .pattern--margin {
+    margin: 0 2.4rem 3.2rem 2.4rem;
+  }
+
+  .heading-pattern-section {
+    margin-bottom: 1.6rem;
+    font-size: 3.6rem;
+  }
+
+  .instagram-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instagram-heading {
+    margin-right: 0;
+  }
+
+  .nav-col {
+    line-height: 1.5;
+  }
+  .footer {
+    padding: 3.6rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 368px (Phones) */
+/* **************************** */
+@media (max-width: 23em) {
+}
