@@ -17,184 +17,256 @@
     ></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/pattern-store.css" />
 
     <title>EMMA</title>
   </head>
+  <!-- --------------- -->
+  <!-- HEADER SECTION -->
+  <!-- --------------- -->
+  <header class="flex align-items--center">
+    <a class="header-logo" href="index.html">
+      <img
+        class="logo"
+        alt="EMMA by Emma Elisabeth Knit logo"
+        src="Img/Logo/Ren logo.svg"
+      />
+    </a>
+    <!-- --------------- -->
+    <!-- NAV SECTION -->
+    <!-- --------------- -->
+
+    <nav class="main-nav">
+      <button class="btn-mobile-nav open-mobile">
+        <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
+      </button>
+      <button class="btn-mobile-nav close-mobile hide">
+        <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
+      </button>
+      <!-- NAV MENU: SMALL SCREENS -->
+      <ul
+        class="main-nav-list-mobile flex flex-dir-column align-items--center hide"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="pattern.html"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#about"
+            >OM EMMA</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#contact"
+            >Kontakt</a
+          >
+        </li>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+        ></a>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="sales-conditions.html"
+            >Salgsbetingelser</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="privacy-page.html"
+            >Personvern og vilkår</a
+          >
+        </li>
+      </ul>
+      <!-- NAV MENU: BIG SCREEN -->
+      <ul
+        class="main-nav-list font-size-1-6 big-screen flex align-items--center"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="pattern.html"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#about"
+            >OM EMMA</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#contact"
+            >Kontakt</a
+          >
+        </li>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+        ></a>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <!-- --------------- -->
-    <!-- HEADER SECTION -->
-    <!-- --------------- -->
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          alt="EMMA by Emma Elisabeth Knit logo"
-          src="Img/Logo/Ren logo.svg"
-        />
-      </a>
+    <main class="main-section margin-LF-auto">
       <!-- --------------- -->
-      <!-- NAV SECTION -->
+      <!-- HERO SECTION -->
       <!-- --------------- -->
-      <nav class="main-nav">
-        <div class="new-menu">
-          <div class="dropdown">
-            <button onclick="myFunction()" class="btn-dropdown dropbtn">
-              <i class="fa-solid fa-bars dropdown-icon"></i>
-            </button>
-            <ul id="myDropdown" class="dropdown-content dropdown-list">
-              <li>
-                <a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a>
-              </li>
-              <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-              <li>
-                <a class="main-nav-link" href="contact.html">Kontakt</a>
-              </li>
-              <li>
-                <a class="main-nav-link" href="sales-conditions.html"
-                  >Salgsbetingelser</a
-                >
-              </li>
-              <li>
-                <a class="main-nav-link" href="privacy-page.html"
-                  >Personvern & vilkår</a
-                >
-              </li>
-            </ul>
-          </div>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping icon-cart nav-cta"></i
-          ></a>
-        </div>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
-          <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-          <li>
-            <a class="main-nav-link" href="sales-conditions.html"
-              >Salgsbetingelser</a
-            >
-          </li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-section">
-      <!-- --------------- -->
-      <!-- NEWS SECTION -->
-      <!-- --------------- -->
-      <div class="news-section">
-        <div class="news">
-          <figure class="news-img-box">
+
+      <div class="hero-section margin-LF-auto">
+        <div class="hero grid grid--2-cols align-self--center">
+          <figure class="hero-img-box">
             <img
-              class="news-img"
+              class="hero-img"
               alt="woman wearing a white beanie"
               src="img/guros-lue/gsnyhet.svg"
             />
           </figure>
-          <div class="news-text-box">
-            <p class="news-sticker">Nyhet</p>
-            <h1 class="news-heading">Guros lue</h1>
-            <a class="btn" href="pattern-page/guros-lue.html"> Se mer </a>
+          <div class="hero-text-box">
+            <p class="hero-sticker">Nyhet</p>
+            <h1 class="hero-heading font-size-12-1">Guros lue</h1>
+            <a
+              class="btn font-size-1-6 cursor-pointer"
+              href="pattern-page/guros-lue.html"
+            >
+              Se mer
+            </a>
           </div>
         </div>
       </div>
+
       <!-- --------------- -->
       <!-- PATTERN SECTION -->
       <!-- --------------- -->
       <div class="pattern-section">
-        <h2 class="heading-pattern-section">Utvalgte oppskrifter</h2>
-        <div class="pattern grid--3-cols pattern--margin">
+        <h2 class="heading-pattern-section text-align--center font-size-4-8">
+          Utvalgte oppskrifter
+        </h2>
+        <div class="gap-3-2 grid grid--3-cols pattern--margin">
           <!-- 01 -->
           <div class="pattern-card">
-            <figure class="pattern-card-item">
-              <img
-                class="pattern-card-img"
-                src="img/Malins-genser/2.jpg"
-                alt="woman with a knitted sweater on a boat"
-              />
-            </figure>
-            <div class="pattern-card-text-box">
-              <h3 class="pattern-card-heading">Malins genser</h3>
-              <p class="pattern-card-price">60.00 NOK</p>
+            <a
+              class="text-decoration-none"
+              href="/pattern-page/malins-genser.html"
+            >
+              <figure class="pattern-card-item">
+                <img
+                  class="pattern-card-img"
+                  src="img/Malins-genser/2.jpg"
+                  alt="woman with a knitted sweater on a boat"
+                />
+              </figure>
+              <div class="pattern-card-text-box grid grid--1-col">
+                <h3 class="pattern-card-heading">Malins genser</h3>
+                <p class="pattern-card-price">60.00 NOK</p>
 
-              <a class="add-cart" href="#">
-                <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-              </a>
-            </div>
+                <a class="add-cart" href="#">
+                  <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                </a>
+              </div>
+            </a>
           </div>
 
           <!-- 02 -->
           <div class="pattern-card">
-            <figure class="pattern-card-item">
-              <img
-                class="pattern-card-img"
-                src="img/Guros-genser/10.jpg"
-                alt="Green knitted sweater"
-              />
-            </figure>
-            <div class="pattern-card-text-box">
-              <h3 class="pattern-card-heading">Guros genser</h3>
-              <p class="pattern-card-price">60.00 NOK</p>
-              <a class="add-cart" href="#">
-                <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-              </a>
-            </div>
+            <a
+              class="text-decoration-none"
+              href="/pattern-page/guros-genser.html"
+            >
+              <figure class="pattern-card-item">
+                <img
+                  class="pattern-card-img"
+                  src="img/Guros-genser/10.jpg"
+                  alt="Green knitted sweater"
+                />
+              </figure>
+              <div class="pattern-card-text-box grid grid--1-col">
+                <h3 class="pattern-card-heading">Guros genser</h3>
+                <p class="pattern-card-price">60.00 NOK</p>
+                <a class="add-cart" href="#">
+                  <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                </a>
+              </div>
+            </a>
           </div>
 
           <!-- 03 -->
           <div class="pattern-card display-no-3">
-            <figure class="pattern-card-item">
-              <img
-                class="pattern-card-img"
-                src="img/Fridas-genser/19.jpg"
-                alt="purple knitted sweater"
-              />
-            </figure>
+            <a
+              class="text-decoration-none"
+              href="/pattern-page/fridas-genser.html"
+            >
+              <figure class="pattern-card-item">
+                <img
+                  class="pattern-card-img"
+                  src="img/Fridas-genser/19.jpg"
+                  alt="purple knitted sweater"
+                />
+              </figure>
 
-            <div class="pattern-card-text-box">
-              <h3 class="pattern-card-heading">Fridas genser</h3>
-              <p class="pattern-card-price">60.00 NOK</p>
-              <a class="add-cart" href="#">
-                <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-              </a>
-            </div>
+              <div class="pattern-card-text-box grid grid--1-col">
+                <h3 class="pattern-card-heading">Fridas genser</h3>
+                <p class="pattern-card-price">60.00 NOK</p>
+                <a class="add-cart" href="#">
+                  <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                </a>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="btn-light-top">
+        <div class="btn-light-top text-align--center font-size-2-4">
           <a href="pattern.html" class="btn-light">Se alle oppskrifter</a>
+        </div>
+      </div>
+
+      <!-- --------------- -->
+      <!-- ABOUT EMMA SECTION -->
+      <!-- --------------- -->
+      <div id="about" class="about-section flex page-section">
+        <div class="about-text-section justify-self--center align-self--center">
+          <h2 class="page-heading font-size-4-8">Om Emma</h2>
+          <p class="page-text font-size-1-6">
+            Hei, Jeg er Emma Elisabeth! <br /><br />
+            Jeg er 29 år og kvinnen bak merket EMMA, som lager oppskrifter på
+            moderne strikkeplagg. <br /><br />Mine strikkekunnskaper startet i
+            det små når jeg som liten pike fikk lære om rette og vrange masker
+            av min mor. Det var nok til å lage lange, varme skjerf. <br />I
+            tidlig ungdomsalder var det hekling som gjaldt. Sammen med en
+            venninne hadde jeg storproduksjon av heklede luer, som vi lagde på
+            bestilling. <br />Det er først i voksen alder at jeg har tatt opp
+            strikking igjen og lært meg alt jeg kan. Takket være youtube har jeg
+            blitt en erfaren strikker!
+          </p>
+        </div>
+        <div class="about-text-img">
+          <img class="about-img" src="/Img/Instagram/2.jpg" />
+          <div class="about-text-section-2">
+            <p class="page-text font-size-1-6">
+              I min portofolie finner du plagg i ulike strikkefastheter og
+              vanskelighetsgrader. Målet er at det skal være oppskrifter for
+              alle, både nybegynnere og erfarene strikkere.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- --------------- -->
       <!-- INSTAGRAM SECTION -->
       <!-- --------------- -->
-      <div class="instagram-section">
-        <div class="instagram-box">
+      <div class="instagram-section margin-LF-auto">
+        <div class="instagram-box margin-LF-auto">
           <a
             class="instagram-link"
             target="_blank"
             href="https://www.instagram.com/emmaelisabethknit/"
-            ><h3 class="instagram-heading">Følg EMMA på Instagram</h3></a
+            ><h3 class="instagram-heading text-align--start font-size-3-6">
+              Følg EMMA på Instagram
+            </h3></a
           >
 
-          <div class="instagram-gallery">
+          <div class="instagram-gallery grid grid--3-cols">
             <figure class="gallery-item">
               <a target="_blank" href="https://www.instagram.com/p/CkLjX-GjSKs/"
                 ><img src="img/Instagram/1.jpg"
               /></a>
             </figure>
             <figure class="gallery-item">
-              <a target="_blank" href="https://www.instagram.com/p/CkD3osmsZFM/"
-                ><img src="img/Instagram/2.jpg"
-              /></a>
-            </figure>
-            <figure class="gallery-item">
               <a target="_blank" href="https://www.instagram.com/p/Cj2JJpTsAPz/"
                 ><img src="img/Instagram/3.jpg"
-              /></a>
-            </figure>
-            <figure class="gallery-item">
-              <a target="_blank" href="https://www.instagram.com/p/CjxvXTPMvEV/"
-                ><img src="img/Instagram/4.jpg"
               /></a>
             </figure>
             <figure class="gallery-item">
@@ -220,71 +292,134 @@
           </div>
         </div>
       </div>
+      <!-- -------------------- -->
+      <!-- CONTACT FORM SECTION -->
+      <!-- -------------------- -->
+      <div
+        class="page-section align-items--center flex flex-dir-column"
+        id="contact"
+      >
+        <h1 class="page-heading font-size-6-4">Ta Kontakt</h1>
+        <form method="get" class="contact-form flex flex-dir-column">
+          <div>
+            <input
+              class="input-field"
+              id="name"
+              type="text"
+              placeholder="NAVN *"
+              required
+            />
+          </div>
 
-      <!-- --------------- -->
-      <!-- TO TOP ICON -->
-      <!-- --------------- -->
+          <div>
+            <input
+              class="input-field"
+              id="email"
+              type="email"
+              placeholder="DIN E-POST *"
+              required
+            />
+          </div>
 
-      <div class="to-top-col">
+          <div>
+            <textarea
+              class="input-field message-field"
+              id="message"
+              type="text"
+              placeholder="MELDING *"
+              rows="15"
+              required
+            ></textarea>
+          </div>
+
+          <button value="submit" class="btn btn--contact">Send</button>
+          <div>
+            <p class="ps align-items--center">* Feltet må fylles ut</p>
+          </div>
+        </form>
+      </div>
+      <div class="to-top-col block" id="toTop">
         <a href="#"><i class="fa-solid fa-angles-up to-top-icon"></i></a>
       </div>
     </main>
+    <script src="/JS/script.js"></script>
   </body>
   <!-- --------------- -->
   <!-- FOOTER SECTION -->
   <!-- --------------- -->
   <footer class="footer">
-    <div class="footer-section">
-      <div class="logo-col">
-        <ul class="social-links">
+    <div class="grid grid--2-cols justify-items--center">
+      <div class="flex flex-dir-column">
+        <ul class="social-links flex">
           <li>
             <a
-              class="social-icon"
-              target="_blank"
-              href="https://www.instagram.com/emmaelisabethknit/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="social-icon"
+              class="social-icon font-size-3-6"
               target="_blank"
               href="https://www.facebook.com/Emmaelisabethknit"
               s
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.ravelry.com/designers/emma-elisabeth-eide"
+              s
+              ><i class="fa-brands fa-ravelry"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.instagram.com/emmaelisabethknit/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
         </ul>
-        <a class="footer-link" href="mailto:emmaelisabethknit@gmail.com"
+        <a
+          class="footer-link font-size-1-6"
+          href="mailto:emmaelisabethknit@gmail.com"
           >emmaelisabethknit@gmail.com</a
         >
-        <p class="copyright">
+        <p class="copyright font-size-1-4">
           Copyright &copy; 2022 by Emma Elisabeth Knit,<br />
           Inc. All rights reserved.
         </p>
       </div>
-      <nav class="nav-col">
-        <p class="footer-heading">Info</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="contact.html">Kontakt</a></li>
-          <li>
-            <a class="footer-link" href="sales-conditions.html"
+      <nav class="justify-self--center">
+        <p class="footer-heading font-size-1-6">Sider</p>
+        <ul class="footer-nav grid grid--2-cols">
+          <li class="footer-link--shoppingbag">
+            <a class="footer-link font-size-1-6" href="#">Handlekurv</a>
+          </li>
+          <li class="footer-link--patterns">
+            <a class="footer-link font-size-1-6" href="pattern.html"
+              >Oppskrifter</a
+            >
+          </li>
+          <li class="footer-link--sale">
+            <a class="footer-link font-size-1-6" href="sales-conditions.html"
               >Salgsbetingelser</a
             >
           </li>
-          <li>
-            <a class="footer-link" href="privacy-page.html"
+          <li class="footer-link--privacy">
+            <a class="footer-link font-size-1-6" href="privacy-page.html"
               >Personvern og vilkår</a
             >
           </li>
-        </ul>
-      </nav>
-      <nav class="nav-col">
-        <p class="footer-heading">Sider</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="pattern.html">Oppskrifter</a></li>
-          <li><a class="footer-link" href="about.html">Om Emma</a></li>
-          <li><a class="footer-link" href="#">Handlekurv</a></li>
+          <li class="footer-link--about">
+            <a class="footer-link font-size-1-6" href="index.html#about"
+              >Om Emma</a
+            >
+          </li>
+
+          <li class="footer-link--contact">
+            <a class="footer-link font-size-1-6" href="index.html#contact"
+              >Kontakt</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
