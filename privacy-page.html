@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,119 +18,94 @@
     ></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/pattern-store.css" />
     <title>EMMA</title>
   </head>
+    <!-- --------------- -->
+  <!-- HEADER SECTION -->
+  <!-- --------------- -->
+  <header class="flex align-items--center">
+    <a class="header-logo" href="index.html">
+      <img
+        class="logo"
+        alt="EMMA by Emma Elisabeth Knit logo"
+        src="Img/Logo/Ren logo.svg"
+      />
+    </a>
+    <!-- --------------- -->
+    <!-- NAV SECTION -->
+    <!-- --------------- -->
+    <nav class="main-nav">
+      <button class="btn-mobile-nav open-mobile">
+        <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
+      </button>
+      <button class="btn-mobile-nav close-mobile hide">
+        <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
+      </button>
+
+      <ul class="main-nav-list hide">
+        <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
+        <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
+        <li><a class="main-nav-link" href="contact.html">Kontakt</a></li>
+        <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
+        <li>
+          <a class="main-nav-link mobile-nav-link" href="sales-conditions.html"
+            >Salgsbetingelser</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link mobile-nav-link" href="privacy-page.html"
+            >Personvern og vilkår</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body>
 
-      <!-- --------------- -->
-    <!-- HEADER SECTION -->
-    <!-- --------------- -->
-
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          alt="EMMA by Emma Elisabeth Knit logo"
-          src="Img/Logo/Ren logo.svg"
-        />
-      </a>
-      <!-- --------------- -->
-      <!-- NAV SECTION -->
-      <!-- --------------- -->
-      <nav class="main-nav">
-        <div class="new-menu">
-          <div class="dropdown" data-dropdown>
-            <button class="btn-dropdown" data-dropdown-btn>
-              <i class="fa-solid fa-bars dropdown-icon"></i>
-            </button>
-            <div class="dropdown-menu">
-              <ul class="dropdown-list">
-                <li>
-                  <a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a>
-                </li>
-                <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-                <li>
-                  <a class="main-nav-link" href="contact.html">Kontakt</a>
-                </li>
-                <li>
-                  <a class="main-nav-link" href="sales-conditions.html"
-                    >Salgsbetingelser</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="privacy-page.html"
-                    >Personvern & vilkår</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping icon-cart nav-cta"></i
-          ></a>
-        </div>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
-          <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-          <li>
-            <a class="main-nav-link" href="sales-conditions.html"
-              >Salgsbetingelser</a
-            >
-          </li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-section">
+    <main class="main-section margin-LF-auto">
 
       <!-- --------------- -->
       <!-- PERSONVERN OG VILKÅR SECTION -->
       <!-- --------------- -->
 <div class="page-section">
- <h1 class="page-heading">Personvern og vilkår</h1>
+ <h1 class="page-heading font-size-6-4">Personvern og vilkår</h1>
 
- <div class="page-text-box">
+ <div class="page-text-box flex gap-6-4 flex-dir-column">
  <div class="text-box-item">
-  <h2 class="page-heading-secondary">Personlige opplysninger</h2>
-  <p class="page-text">EMMA selger ikke personlige opplysninger til andre. <br> De er kun registrert i nettbutikkens kundekartotek. <br> Du kan til enhver tid få slettet dine opplysninger. <br> Kontakt <a class="footer-link" href="mailto:emmaelisabethknit@gmail.com"
+  <h2 class="page-heading-secondary font-size-2-4">Personlige opplysninger</h2>
+  <p class="page-text font-size-1-6">EMMA selger ikke personlige opplysninger til andre. <br> De er kun registrert i nettbutikkens kundekartotek. <br> Du kan til enhver tid få slettet dine opplysninger. <br> Kontakt <a class="footer-link" href="mailto:emmaelisabethknit@gmail.com"
     >emmaelisabethknit@gmail.com</a> for sletting. <br> <br> Når du handler, registreres følgende opplysninger om deg:</p> 
     <ul class="ul-list">
-      <li class="list-item">Navn</li>
-      <li class="list-item">Adresse</li>
-      <li class="list-item">Telefonnummer</li>
-      <li class="list-item">E-post adresse</li>
+      <li class="list-item font-size-1-6">Navn</li>
+      <li class="list-item font-size-1-6">Adresse</li>
+      <li class="list-item font-size-1-6">Telefonnummer</li>
+      <li class="list-item font-size-1-6">E-post adresse</li>
     </ul>
-    <p class="page-text"><br>Formålet med disse opplysningene er å kunne sende deg varene dine.Personlige opplysninger registrert hos EMMA oppbevares i 5 år, før de slettes. <br>
+    <p class="page-text font-size-1-6"><br>Formålet med disse opplysningene er å kunne sende deg varene dine.Personlige opplysninger registrert hos EMMA oppbevares i 5 år, før de slettes. <br>
     IT ansvarlig hos EMMA: Emma Elisbeth Høvik Eide <br><br>
     Det hverken oppbevares eller transmitteres kundeopplysninger kryptert.</p>
  </div>
 
  <div class="text-box-item">
-  <h2 class="page-heading-secondary">Cookies</h2>
-  <p class="page-text">www.emmaelisabethknit.com benytter seg av cookies med et formål om å optimalisere hjemmesiden og dens funksjonalitet, og dermed gjøre alle besøk så enkle som overhode mulig for både deg, og andre.</p>
+  <h2 class="page-heading-secondary font-size-2-4">Cookies</h2>
+  <p class="page-text font-size-1-6">www.emmaelisabethknit.com benytter seg av cookies med et formål om å optimalisere hjemmesiden og dens funksjonalitet, og dermed gjøre alle besøk så enkle som overhode mulig for både deg, og andre.</p>
  </div>
 
  <div class="text-box-item">
-  <h2 class="page-heading-secondary">Statistikk</h2>
-  <p class="page-text">www.emmaelisabethknit.com benytter seg av statistikk med et formål om å optimalisere hjemmesiden, og få oversikt over antall besøkende.</p>
+  <h2 class="page-heading-secondary font-size-2-4">Statistikk</h2>
+  <p class="page-text font-size-1-6">www.emmaelisabethknit.com benytter seg av statistikk med et formål om å optimalisere hjemmesiden, og få oversikt over antall besøkende.</p>
  </div>
 </div>
-
-
-<!-- --------------- -->
-  <!-- TO TOP ICON -->
-  <!-- --------------- -->
-      
-<div class="to-top-col">
-  <a href="#" ><i class="fa-solid fa-angles-up to-top-icon"></i></a>
+<div class="to-top-col" id="toTop">
+  <a href="#"><i class="fa-solid fa-angles-up to-top-icon"></i></a>
 </div>
     </main>
+    <script src="/JS/script.js"></script>
   </body>
-
-  <!-- --------------- -->
+ <!-- --------------- -->
   <!-- FOOTER SECTION -->
   <!-- --------------- -->
-
   <footer class="footer">
     <div class="footer-section">
       <div class="logo-col">

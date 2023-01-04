@@ -17,15 +17,15 @@
     ></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/pattern-store.css" />
     <title>EMMA</title>
   </head>
   <body>
     <!-- --------------- -->
     <!-- HEADER SECTION -->
     <!-- --------------- -->
-
-    <header>
-      <a href="index.html">
+    <header class="flex align-items--center">
+      <a class="header-logo" href="index.html">
         <img
           class="logo"
           alt="EMMA by Emma Elisabeth Knit logo"
@@ -36,60 +36,47 @@
       <!-- NAV SECTION -->
       <!-- --------------- -->
       <nav class="main-nav">
-        <div class="new-menu">
-          <div class="dropdown" data-dropdown>
-            <button class="btn-dropdown" data-dropdown-btn>
-              <i class="fa-solid fa-bars dropdown-icon"></i>
-            </button>
-            <div class="dropdown-menu">
-              <ul class="dropdown-list">
-                <li>
-                  <a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a>
-                </li>
-                <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-                <li>
-                  <a class="main-nav-link" href="contact.html">Kontakt</a>
-                </li>
-                <li>
-                  <a class="main-nav-link" href="sales-conditions.html"
-                    >Salgsbetingelser</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="privacy-page.html"
-                    >Personvern & vilkår</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping icon-cart nav-cta"></i
-          ></a>
-        </div>
-        <ul class="main-nav-list">
+        <button class="btn-mobile-nav open-mobile">
+          <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
+        </button>
+        <button class="btn-mobile-nav close-mobile hide">
+          <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
+        </button>
+
+        <ul class="main-nav-list hide">
           <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
           <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
+          <li><a class="main-nav-link" href="contact.html">Kontakt</a></li>
+          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
           <li>
-            <a class="main-nav-link" href="sales-conditions.html"
+            <a
+              class="main-nav-link mobile-nav-link"
+              href="sales-conditions.html"
               >Salgsbetingelser</a
             >
           </li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
+          <li>
+            <a class="main-nav-link mobile-nav-link" href="privacy-page.html"
+              >Personvern og vilkår</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="main-section">
+
+    <main class="main-section margin-LF-auto">
       <!-- --------------- -->
       <!-- SALES CONDITION SECTION -->
       <!-- --------------- -->
       <div class="page-section">
-        <h1 class="page-heading">Salgsbetingelser</h1>
+        <h1 class="page-heading font-size-6-4">Salgsbetingelser</h1>
 
-        <div class="page-text-box">
+        <div class="page-text-box flex gap-6-4 flex-dir-column">
           <div class="text-box-item">
-            <h2 class="page-heading-secondary">Mailopplysninger</h2>
-            <p class="page-text">
+            <h2 class="page-heading-secondary font-size-2-4">
+              Mailopplysninger
+            </h2>
+            <p class="page-text font-size-1-6">
               Sørg alltid for å sjekke at du har oppgitt riktig mail. <br />
               Dersom det er feil i mailadressen vil du ikke motta
               ordrebekreftelse eller oppskrift i PDF format.
@@ -97,8 +84,10 @@
           </div>
 
           <div class="text-box-item">
-            <h2 class="page-heading-secondary">Ordrebekreftelse</h2>
-            <p class="page-text">
+            <h2 class="page-heading-secondary font-size-2-4">
+              Ordrebekreftelse
+            </h2>
+            <p class="page-text font-size-1-6">
               Du mottar ordrebekreftelse på oppgitt mailadresse umiddelbart
               etter kjøp. Ta kontakt på emmaelisabethknit@gmail.com dersom du
               ikke har mottat ordrebekreftelsen.
@@ -106,8 +95,8 @@
           </div>
 
           <div class="text-box-item">
-            <h2 class="page-heading-secondary">Betaling</h2>
-            <p class="page-text">
+            <h2 class="page-heading-secondary font-size-2-4">Betaling</h2>
+            <p class="page-text font-size-1-6">
               EMMA mottar online betalinger med Visa, Mastercard eller Vipps.
               Alle beløp på er ink. moms. <br />
               Hjemmesiden bruker følgende valuta til prissetting: Norge - kroner
@@ -117,18 +106,18 @@
           </div>
 
           <div class="text-box-item">
-            <h2 class="page-heading-secondary">Levering</h2>
-            <p class="page-text">
+            <h2 class="page-heading-secondary font-size-2-4">Levering</h2>
+            <p class="page-text font-size-1-6">
               Oppskrifter sendes som PDF-filer til din oppgitte mailadresse.
               Sørg for å fylle inn riktig.
             </p>
           </div>
 
           <div class="text-box-item">
-            <h2 class="page-heading-secondary">
+            <h2 class="page-heading-secondary font-size-2-4">
               Angrerett ved kjøp av oppskrifter
             </h2>
-            <p class="page-text">
+            <p class="page-text font-size-1-6">
               Kjøperen er ansvarlig for å legge riktig produkt i handlekurven
               når kjøpet gjennomføres. Kjøperen har ikke angrerett på PDF-filer
               kjøpt på hjemmeisden, da disse ikke kan returneres.
@@ -136,21 +125,15 @@
           </div>
         </div>
       </div>
-
-      <!-- --------------- -->
-      <!-- TO TOP ICON -->
-      <!-- --------------- -->
-
-      <div class="to-top-col">
+      <div class="to-top-col" id="toTop">
         <a href="#"><i class="fa-solid fa-angles-up to-top-icon"></i></a>
       </div>
     </main>
+    <script src="/JS/script.js"></script>
   </body>
-
   <!-- --------------- -->
   <!-- FOOTER SECTION -->
   <!-- --------------- -->
-
   <footer class="footer">
     <div class="footer-section">
       <div class="logo-col">
