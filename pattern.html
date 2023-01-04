@@ -17,275 +17,310 @@
     ></script>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/pattern-store.css" />
     <title>EMMA</title>
   </head>
+  <!-- --------------- -->
+  <!-- HEADER SECTION -->
+  <!-- --------------- -->
+  <header class="flex align-items--center">
+    <a class="header-logo" href="index.html">
+      <img
+        class="logo"
+        alt="EMMA by Emma Elisabeth Knit logo"
+        src="Img/Logo/Ren logo.svg"
+      />
+    </a>
+    <!-- --------------- -->
+    <!-- NAV SECTION -->
+    <!-- --------------- -->
+
+    <nav class="main-nav">
+      <button class="btn-mobile-nav open-mobile">
+        <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
+      </button>
+      <button class="btn-mobile-nav close-mobile hide">
+        <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
+      </button>
+      <!-- NAV MENU: SMALL SCREENS -->
+      <ul
+        class="main-nav-list-mobile flex flex-dir-column align-items--center hide"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="pattern.html"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#about"
+            >OM EMMA</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#contact"
+            >Kontakt</a
+          >
+        </li>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+        ></a>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="sales-conditions.html"
+            >Salgsbetingelser</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="privacy-page.html"
+            >Personvern og vilkår</a
+          >
+        </li>
+      </ul>
+      <!-- NAV MENU: BIG SCREEN -->
+      <ul
+        class="main-nav-list font-size-1-6 big-screen flex align-items--center"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="pattern.html"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#about"
+            >OM EMMA</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="index.html#contact"
+            >Kontakt</a
+          >
+        </li>
+        <a href="#"
+          ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+        ></a>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <!-- --------------- -->
-    <!-- HEADER SECTION -->
-    <!-- --------------- -->
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          alt="EMMA by Emma Elisabeth Knit logo"
-          src="Img/Logo/Ren logo.svg"
-        />
-      </a>
-      <!-- --------------- -->
-      <!-- NAV SECTION -->
-      <!-- --------------- -->
-      <nav class="main-nav">
-        <div class="new-menu">
-          <div class="dropdown" data-dropdown>
-            <button class="btn-dropdown" data-dropdown-btn>
-              <i class="fa-solid fa-bars dropdown-icon"></i>
-            </button>
-            <div class="dropdown-menu">
-              <ul class="dropdown-list">
-                <li>
-                  <a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a>
-                </li>
-                <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-                <li>
-                  <a class="main-nav-link" href="contact.html">Kontakt</a>
-                </li>
-                <li>
-                  <a class="main-nav-link" href="sales-conditions.html"
-                    >Salgsbetingelser</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="privacy-page.html"
-                    >Personvern & vilkår</a
-                  >
-                </li>
-              </ul>
+    <main class="main-section margin-LF-auto">
+      <div class="page-section flex gap-6-4">
+        <div>
+          <h1 class="page-heading font-size-6-4">Oppskrifter</h1>
+
+          <!-- FILTER DROP DOWN -->
+          <div class="dropDown">
+            <button class="dropbtn">Velg språk ▼</button>
+            <div class="dropDownContent">
+              <a class="filter-item language-norsk">Norsk</a>
+              <a class="filter-item language-svenska">Svenska</a>
+              <a class="filter-item language-english">English</a>
             </div>
           </div>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping icon-cart nav-cta"></i
-          ></a>
-        </div>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
-          <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-          <li>
-            <a class="main-nav-link" href="sales-conditions.html"
-              >Salgsbetingelser</a
-            >
-          </li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
-        </ul>
-      </nav>
-    </header>
 
-    <main class="main-section">
-      <div class="page-section page-section--flex">
-        <!-- --------------- -->
-        <!-- ASIDE SECTION -->
-        <!-- --------------- -->
-        <aside class="filter">
-          <h3 class="filter-heading">Språk</h3>
-          <a href="#" class="filter-item">Norsk</a>
-          <a href="#" class="filter-item">Svenska</a>
-          <a href="#" class="filter-item">English</a>
-          <h3 class="filter-heading">Plagg</h3>
-          <a href="#" class="filter-item genser">Genser</a>
-          <a href="#" class="filter-item cardigan">Cardigan</a>
-          <a href="#" class="filter-item lue">Lue</a>
-          <h3 class="filter-heading">Nivå</h3>
-          <a href="#" class="filter-item level level-1"
-            ><img class="level-icon" src="Img/nivå/1.png" />
-          </a>
-          <a href="#" class="filter-item level level-2"
-            ><img class="level-icon" src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png"
-          /></a>
-          <a href="#" class="filter-item level level-3"
-            ><img class="level-icon" src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png"
-          /></a>
-          <a href="#" class="filter-item level level-4"
-            ><img class="level-icon" src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png"
-          /></a>
-          <a href="#" class="filter-item level level-5"
-            ><img class="level-icon" src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png" /><img
-              class="level-icon"
-              src="Img/nivå/1.png"
-          /></a>
-        </aside>
-
-        <!-- --------------- -->
-        <!-- PATTER SHEET SECTION -->
-        <!-- --------------- -->
-        <div>
-          <h1 class="page-heading">Oppskrifter</h1>
+          <!-- --------------- -->
+          <!-- PATTER SHEET SECTION -->
+          <!-- --------------- -->
           <div class="pattern-sheet">
-            <div class="pattern grid--3-cols margin">
-              <!-- GUROS LUE-->
-              <div class="pattern-card lue norsk level-2">
-                <figure class="pattern-card-item coming-soon">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Guros-lue/6.jpg"
-                    alt="woman with a knitted sweater on a boat"
-                  />
-                </figure>
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Guros lue</h3>
-                  <p class="pattern-card-price">30.00 NOK</p>
+            <div class="pattern margin flex flex-dir-column gap-3-2">
+              <!-- NORWEGIAN -->
+              <div class="lang-norsk grid grid--3-cols gap-3-2 language-filter">
+                <!-- GUROS LUE-->
+                <div class="pattern-card norsk">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/guros-lue.html"
+                  >
+                    <figure class="pattern-card-item coming-soon">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Guros-lue/6.jpg"
+                        alt="woman with a knitted sweater on a boat"
+                      />
+                    </figure>
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Guros lue</h3>
+                      <p class="pattern-card-price">30.00 NOK</p>
 
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- MALINS GENSER -->
+                <div class="pattern-card norsk">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/fridas-genser.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Malins-genser/2.jpg"
+                        alt="woman with a knitted sweater on a boat"
+                      />
+                    </figure>
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Malins genser</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- GUROS GENSER -->
+
+                <div class="pattern-card norsk">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/guros-genser.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Guros-genser/10.jpg"
+                        alt="Green knitted sweater"
+                      />
+                    </figure>
+                    <figure class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Guros genser</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </figure>
+                  </a>
+                </div>
+
+                <!-- FRIDAS GENSER -->
+                <div class="pattern-card norsk">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/fridas-genser.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Fridas-genser/19.jpg"
+                        alt="purple knitted sweater"
+                      />
+                    </figure>
+
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Fridas genser</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- EVELINAGENSER -->
+                <div class="pattern-card norsk">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/evelinagenser.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Evelinagenser/20.jpg"
+                        alt="purple knitted sweater"
+                      />
+                    </figure>
+
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Evelinagenser</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- ENGLISH -->
+              <div
+                class="lang-english grid grid--3-cols gap-3-2 language-filter"
+              >
+                <!-- GUROS SWEATER -->
+
+                <div class="pattern-card english">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/guros-sweater.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Guros-genser/10.jpg"
+                        alt="Green knitted sweater"
+                      />
+                    </figure>
+                    <figure class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Guro´s sweater</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </figure>
+                  </a>
+                </div>
+
+                <!-- Frida´s sweater -->
+                <div class="pattern-card english">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/fridas-sweater.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Fridas-genser/19.jpg"
+                        alt="purple knitted sweater"
+                      />
+                    </figure>
+
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Frida´s sweater</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
                   </a>
                 </div>
               </div>
 
-              <!-- MALINS GENSER -->
-              <div class="pattern-card genser norsk level-4">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Malins-genser/2.jpg"
-                    alt="woman with a knitted sweater on a boat"
-                  />
-                </figure>
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Malins genser</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
+              <!-- SWEDISH -->
+              <div
+                class="lang-svenska grid grid--3-cols gap-3-2 language-filter"
+              >
+                <!-- EVELINATRÖJAN -->
+                <div class="pattern-card svenska">
+                  <a
+                    class="text-decoration-none"
+                    href="/pattern-page/evelinagenser-svensk.html"
+                  >
+                    <figure class="pattern-card-item">
+                      <img
+                        class="pattern-card-img"
+                        src="img/Evelinagenser/20.jpg"
+                        alt="purple knitted sweater"
+                      />
+                    </figure>
 
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!-- GUROS GENSER -->
-
-              <div class="pattern-card genser norsk level-3">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Guros-genser/10.jpg"
-                    alt="Green knitted sweater"
-                  />
-                </figure>
-                <figure class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Guros genser</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </figure>
-              </div>
-
-              <!-- GUROS SWEATER -->
-
-              <div class="pattern-card genser english level-3">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Guros-genser/10.jpg"
-                    alt="Green knitted sweater"
-                  />
-                </figure>
-                <figure class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Guro´s sweater</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </figure>
-              </div>
-
-              <!-- FRIDAS GENSER -->
-              <div class="pattern-card genser norsk level-3">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Fridas-genser/19.jpg"
-                    alt="purple knitted sweater"
-                  />
-                </figure>
-
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Fridas genser</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Frida´s sweater -->
-              <div class="pattern-card genser english level-3">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Fridas-genser/19.jpg"
-                    alt="purple knitted sweater"
-                  />
-                </figure>
-
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Frida´s sweater</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!-- EVELINAGENSER -->
-              <div class="pattern-card genser norsk level-2">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Evelinagenser/20.jpg"
-                    alt="purple knitted sweater"
-                  />
-                </figure>
-
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Evelinagenser</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!-- EVELINATRÖJAN -->
-              <div class="pattern-card genser svenska level-2">
-                <figure class="pattern-card-item">
-                  <img
-                    class="pattern-card-img"
-                    src="img/Evelinagenser/20.jpg"
-                    alt="purple knitted sweater"
-                  />
-                </figure>
-
-                <div class="pattern-card-text-box">
-                  <h3 class="pattern-card-heading">Evelinatröjan</h3>
-                  <p class="pattern-card-price">60.00 NOK</p>
-                  <a class="add-cart" href="#">
-                    <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                    <div class="pattern-card-text-box grid grid--1-col">
+                      <h3 class="pattern-card-heading">Evelinatröjan</h3>
+                      <p class="pattern-card-price">60.00 NOK</p>
+                      <a class="add-cart" href="#">
+                        <i class="fa-solid fa-cart-plus add-cart-icon"></i>
+                      </a>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -293,72 +328,87 @@
           </div>
         </div>
       </div>
-
-      <!-- --------------- -->
-      <!-- TO TOP ICON -->
-      <!-- --------------- -->
-
-      <div class="to-top-col">
+      <div class="to-top-col" id="toTop">
         <a href="#"><i class="fa-solid fa-angles-up to-top-icon"></i></a>
       </div>
     </main>
+    <script src="JS/script.js" defer></script>
   </body>
-
   <!-- --------------- -->
   <!-- FOOTER SECTION -->
   <!-- --------------- -->
   <footer class="footer">
-    <div class="footer-section">
-      <div class="logo-col">
-        <ul class="social-links">
+    <div class="grid grid--2-cols justify-items--center">
+      <div class="flex flex-dir-column">
+        <ul class="social-links flex">
           <li>
             <a
-              class="social-icon"
-              target="_blank"
-              href="https://www.instagram.com/emmaelisabethknit/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="social-icon"
+              class="social-icon font-size-3-6"
               target="_blank"
               href="https://www.facebook.com/Emmaelisabethknit"
               s
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.ravelry.com/designers/emma-elisabeth-eide"
+              s
+              ><i class="fa-brands fa-ravelry"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.instagram.com/emmaelisabethknit/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
         </ul>
-        <a class="footer-link" href="mailto:emmaelisabethknit@gmail.com"
+        <a
+          class="footer-link font-size-1-6"
+          href="mailto:emmaelisabethknit@gmail.com"
           >emmaelisabethknit@gmail.com</a
         >
-        <p class="copyright">
+        <p class="copyright font-size-1-4">
           Copyright &copy; 2022 by Emma Elisabeth Knit,<br />
           Inc. All rights reserved.
         </p>
       </div>
-      <nav class="nav-col">
-        <p class="footer-heading">Info</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="contact.html">Kontakt</a></li>
-          <li>
-            <a class="footer-link" href="sales-conditions.html"
+      <nav class="justify-self--center">
+        <p class="footer-heading font-size-1-6">Sider</p>
+        <ul class="footer-nav grid grid--2-cols">
+          <li class="footer-link--shoppingbag">
+            <a class="footer-link font-size-1-6" href="#">Handlekurv</a>
+          </li>
+          <li class="footer-link--patterns">
+            <a class="footer-link font-size-1-6" href="pattern.html"
+              >Oppskrifter</a
+            >
+          </li>
+          <li class="footer-link--sale">
+            <a class="footer-link font-size-1-6" href="sales-conditions.html"
               >Salgsbetingelser</a
             >
           </li>
-          <li>
-            <a class="footer-link" href="privacy-page.html"
+          <li class="footer-link--privacy">
+            <a class="footer-link font-size-1-6" href="privacy-page.html"
               >Personvern og vilkår</a
             >
           </li>
-        </ul>
-      </nav>
-      <nav class="nav-col">
-        <p class="footer-heading">Sider</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="pattern.html">Oppskrifter</a></li>
-          <li><a class="footer-link" href="about.html">Om Emma</a></li>
-          <li><a class="footer-link" href="#">Handlekurv</a></li>
+          <li class="footer-link--about">
+            <a class="footer-link font-size-1-6" href="index.html#about"
+              >Om Emma</a
+            >
+          </li>
+          <li class="footer-link--contact">
+            <a class="footer-link font-size-1-6" href="index.html#contact"
+              >Kontakt</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
