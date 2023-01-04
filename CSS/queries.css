@@ -3,11 +3,14 @@
 /* **************************** */
 
 @media (max-width: 85em) {
+  .footer-section {
+    grid-template-columns: 3fr 1fr 1fr;
+  }
   body {
     max-width: 120rem;
   }
-  .footer-section {
-    grid-template-columns: 3fr 1fr 1fr;
+  header {
+    padding: 0 2rem;
   }
 }
 
@@ -24,7 +27,7 @@
   .footer-section {
     grid-template-columns: 2fr 1fr 1fr;
   }
-  .news-heading {
+  .hero-heading {
     font-size: 9.6rem;
   }
 }
@@ -60,7 +63,7 @@
     width: 70%;
   }
 
-  .news-section {
+  .hero-section {
     padding: 4.8rem 0;
   }
 }
@@ -69,7 +72,7 @@
 /* BELOW 896px (Tablets) */
 /* **************************** */
 @media (max-width: 56em) {
-  .news-heading {
+  .hero-heading {
     font-size: 8rem;
     letter-spacing: 0.3rem;
     margin-bottom: 6.4rem;
@@ -89,6 +92,10 @@
 
   .pattern {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .pattern-card-heading {
+    font-size: 1.6rem;
   }
 
   .display-no-3 {
@@ -123,6 +130,7 @@
   .page-section {
     margin-left: 4.8rem;
     margin-right: 4.8rem;
+    overflow: hidden;
   }
 
   .instagram-heading {
@@ -143,56 +151,69 @@
     padding-right: 0;
   }
 
-  /* NEW MENU */
+  /******* MOBILE MENU ********/
 
-  .new-menu {
-    display: flex;
-    gap: 1.6rem;
+  header {
+    position: relative;
   }
 
-  .dropdown-list {
-    list-style: none;
-    line-height: 6rem;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    right: 0;
-    top: calc(100% + 0.5rem);
-    background-color: rgba(226, 228, 221, 0.95);
-    padding: 4rem 6rem;
-    color: #6d7856;
-    border-radius: 0.25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-    transform: translateY(-10px);
-    z-index: 1;
-    width: 40rem;
-  }
-
-  .btn-dropdown {
-    background-color: #fcfcfc;
+  .btn-mobile-nav {
+    display: block;
     border: none;
-  }
-
-  .dropdown-icon {
-    color: #6d7856;
-    font-size: 2.4rem;
     cursor: pointer;
+    color: #6d7856;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    z-index: 2;
   }
 
-  .dropdown-icon:hover,
-  .dropdown-icon:focus {
-    color: #8a9378;
-  }
-
-  .icon-cart {
-    font-size: 2.2rem;
+  .header-logo {
+    z-index: 3;
   }
 
   .main-nav-list {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: none;
+  }
+
+  .menu-icon {
+    color: #6d7856;
+    font-size: 3.5rem;
+    padding: 1rem;
+  }
+
+  .menu-icon:hover,
+  .menu-icon:focus {
+    color: #8a9378;
+  }
+
+  .menu-icon--open {
+    background-color: #fcfcfc;
+  }
+
+  .menu-icon--close {
+    background-color: rgba(253, 242, 233, 0.96);
+  }
+
+  .nav-open .menu-icon--close {
+    display: block;
+  }
+
+  .nav-open .menu-icon--open {
+    display: block;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.5rem;
   }
 }
 
@@ -222,16 +243,29 @@
 /* BELOW 704px (small Tablets) */
 /* **************************** */
 @media (max-width: 44em) {
-  .page-text-box {
-    width: 100%;
+  .page-section--flex {
+    gap: 2.4rem;
   }
 
   .page-heading {
+    margin-bottom: 3.6rem;
     font-size: 3.6rem;
   }
 
   .page-heading-secondary {
     font-size: 1.6rem;
+  }
+
+  .page-text-box {
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 6.4rem;
+  }
+
+  .hero-img-box img {
+    width: 100%;
   }
 
   .instagram-heading {
@@ -242,22 +276,10 @@
     padding: 1.2rem;
   }
 
-  .pattern-card-heading {
-    font-size: 1.2rem;
-  }
-
-  .pattern-card-price {
-    font-size: 1.2rem;
-  }
-
   .add-cart-icon,
   .add-cart-icon:link,
   .add-cart-icon:visited {
-    font-size: 1.6rem;
-  }
-
-  .page-section--flex {
-    gap: 2.4rem;
+    font-size: 2rem;
   }
 
   .pattern--margin {
@@ -270,14 +292,6 @@
     right: -40%;
     font-size: 1.2rem;
     padding: 0.5rem 4rem;
-  }
-
-  .news-img-box img {
-    width: 100%;
-  }
-
-  .news-heading {
-    font-size: 6.4rem;
   }
 
   .filter {
@@ -315,24 +329,21 @@
     grid-row: 2;
     grid-column: 1 / -1;
   }
-  .page-heading {
-    margin-bottom: 3.6rem;
-  }
 }
 
 /* **************************** */
 /* BELOW 624px (big phones) */
 /* **************************** */
 @media (max-width: 39em) {
-  .news-heading {
+  .hero-heading {
     font-size: 3.6rem;
   }
 
-  .news-section {
+  .hero-section {
     padding: 2.4rem 0;
   }
 
-  .news {
+  .hero {
     grid-template-columns: 1.5fr 1fr;
     gap: 2.4rem;
   }
@@ -357,20 +368,25 @@
   /* .pattern {
     grid-template-columns: 1fr;
   } */
-
-  .dropsdown-menu {
+  .page-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-  .news {
+  .hero {
     grid-template-columns: 1fr 1fr;
   }
 
-  .news-heading {
+  .hero-heading {
     margin-bottom: 2.4rem;
   }
 
-  .news-sticker {
-    font-size: 1.2rem;
+  .hero-sticker {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
   }
 
   .btn,
@@ -393,12 +409,73 @@
     font-size: 3.6rem;
   }
 
+  .pattern-card-price {
+    font-size: 1.2rem;
+  }
+
+  .add-cart-icon,
+  .add-cart-icon:link,
+  .add-cart-icon:visited {
+    font-size: 1.6rem;
+  }
+
+  /* ** FILTER NEW SMALL MENU */
+
+  .filter-section {
+    display: flex;
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding-top: 4rem;
+    gap: 4rem;
+    background-color: rgba(252, 252, 252, 0.97);
+
+    /* 1) hide the element visually */
+    opacity: 1;
+
+    /* 2)make it unaccesible to mouse and keyboard */
+    /* pointer-events: 0; */
+
+    /* 3) hide it from screen readers */
+    /* visibility: hidden; */
+  }
+
+  .filter-btn {
+    margin-top: 3.2rem;
+  }
+
+  .filter-icon {
+    color: #6d7856;
+    font-size: 2.4rem;
+  }
+
+  .filter-icon:hover,
+  .filter-icon:active {
+    color: #414834;
+  }
+
+  .filter-heading {
+    font-size: 2.4rem;
+  }
+
+  .filter-item {
+    font-size: 2rem;
+  }
+
+  .level-icon {
+    height: 2rem;
+  }
+
+  /* ****** */
+
   .instagram-gallery {
     grid-template-columns: 1fr 1fr;
   }
 
   .instagram-heading {
-    margin-right: 0;
+    margin-right: 1.2rem;
   }
 
   .nav-col {
@@ -413,4 +490,29 @@
 /* BELOW 368px (Phones) */
 /* **************************** */
 @media (max-width: 23em) {
+  .page-heading {
+    font-size: 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .heading-pattern-section {
+    font-size: 3rem;
+  }
+
+  .pattern {
+    grid-template-columns: 1fr;
+  }
+
+  .pattern-card-price {
+    font-size: 1.6rem;
+  }
+
+  .margin {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
