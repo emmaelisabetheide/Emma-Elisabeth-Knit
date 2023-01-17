@@ -35,6 +35,7 @@
       <!-- --------------- -->
       <!-- NAV SECTION -->
       <!-- --------------- -->
+
       <nav class="main-nav">
         <button class="btn-mobile-nav open-mobile">
           <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
@@ -42,24 +43,61 @@
         <button class="btn-mobile-nav close-mobile hide">
           <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
         </button>
-
-        <ul class="main-nav-list hide">
-          <li><a class="main-nav-link" href="pattern.html">OPPSKRIFTER</a></li>
-          <li><a class="main-nav-link" href="about.html">OM EMMA</a></li>
-          <li><a class="main-nav-link" href="contact.html">Kontakt</a></li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
+        <!-- NAV MENU: SMALL SCREENS -->
+        <ul
+          class="main-nav-list-mobile flex flex-dir-column align-items--center hide"
+        >
           <li>
-            <a
-              class="main-nav-link mobile-nav-link"
-              href="sales-conditions.html"
+            <a class="main-nav-link cursor-pointer" href="pattern.html"
+              >OPPSKRIFTER</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link cursor-pointer" href="index.html#about"
+              >OM EMMA</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link cursor-pointer" href="index.html#contact"
+              >Kontakt</a
+            >
+          </li>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+          ></a>
+          <li>
+            <a class="main-nav-link cursor-pointer" href="sales-conditions.html"
               >Salgsbetingelser</a
             >
           </li>
           <li>
-            <a class="main-nav-link mobile-nav-link" href="privacy-page.html"
+            <a class="main-nav-link cursor-pointer" href="privacy-page.html"
               >Personvern og vilkår</a
             >
           </li>
+        </ul>
+        <!-- NAV MENU: BIG SCREEN -->
+        <ul
+          class="main-nav-list font-size-1-6 big-screen flex align-items--center"
+        >
+          <li>
+            <a class="main-nav-link cursor-pointer" href="pattern.html"
+              >OPPSKRIFTER</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link cursor-pointer" href="index.html#about"
+              >OM EMMA</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link cursor-pointer" href="index.html#contact"
+              >Kontakt</a
+            >
+          </li>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping icon-cart font-size-2-4"></i
+          ></a>
         </ul>
       </nav>
     </header>
