@@ -26,6 +26,9 @@ The goal is to get this project to a level where customers safely can buy a patt
 
 ## Running the project
 1. Clone the repository: `gh repo clone emmaelisabetheide/Emma-Elisabeth-Knit`
+2. Install the dependencies: `npm install`
+3. Run the project: `npm start` 
+
 2. Go to the `app` folder: `cd app/`
 3. Switch to component/home branch: `git switch component/home`
 4. Install the dependencies: `npm install`
