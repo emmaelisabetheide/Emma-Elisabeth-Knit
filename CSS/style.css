@@ -545,6 +545,10 @@ header {
   gap: 2.4rem;
 }
 
+.footer-link--header {
+  margin-bottom: 1rem;
+}
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
@@ -556,16 +560,6 @@ header {
 .footer-link:active {
   color: #6d7856;
   transition: all 0.3s;
-}
-
-.footer-link--contact {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.footer-link--privacy {
-  grid-row: 3;
-  grid-column: 2;
 }
 
 .copyright {
