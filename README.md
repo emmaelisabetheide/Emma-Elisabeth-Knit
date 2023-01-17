@@ -4,6 +4,8 @@
 EMMA is a knitwear design brand. This page is going to be it´s homepage, where you can buy kniting patterns.
 The goal is to get this project to a level where customers safely can buy a pattern (get pattern-file on e-mail).
 
+#### Live link https://emmaelisabethknit.netlify.app/
+
 ## Features
 - On the patten.html you can filter between different laguages. This is language for the patterns, and not the page.
 - On a smaller screen the top menu changes. The menu is coded in html and css, but not finished with javascript.
