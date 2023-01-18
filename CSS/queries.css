@@ -24,11 +24,14 @@
     font-size: 56.25%;
   }
 
-  .footer-section {
-    grid-template-columns: 2fr 1fr 1fr;
-  }
+  /******* HERO ********/
   .hero-heading {
     font-size: 9.6rem;
+  }
+
+  /******* FOOTER ********/
+  .footer-section {
+    grid-template-columns: 2fr 1fr 1fr;
   }
 }
 
@@ -36,10 +39,19 @@
 /* BELOW 1056px (smaller landscape tablets) */
 /* **************************** */
 @media (max-width: 66em) {
+  .page-heading {
+    margin-bottom: 6.4rem;
+  }
+
+  /******* HERO ********/
+  .hero-section {
+    padding: 4.8rem 0;
+  }
+
+  /******* PATTERN ********/
   .pattern-card {
     padding: 1.6rem;
   }
-
   .svenska::after,
   .norsk::after,
   .english::after {
@@ -49,22 +61,8 @@
     left: 3%;
   }
 
-  .coming-soon::after {
-    letter-spacing: 0.3rem;
-    top: 12%;
-    right: -45%;
-  }
-
-  .page-heading {
-    margin-bottom: 6.4rem;
-  }
-
   .btn--with-icon {
     width: 70%;
-  }
-
-  .hero-section {
-    padding: 4.8rem 0;
   }
 }
 
@@ -72,73 +70,57 @@
 /* BELOW 896px (Tablets) */
 /* **************************** */
 @media (max-width: 56em) {
+  .page-section {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    overflow: hidden;
+  }
+  .page-heading {
+    font-size: 4.8rem;
+  }
+  .main-section {
+    max-width: 100rem;
+  }
+
+  /******* HERO ********/
   .hero-heading {
     font-size: 8rem;
     letter-spacing: 0.3rem;
     margin-bottom: 6.4rem;
   }
 
+  /******* PATTERN ********/
   .heading-pattern-section {
     font-size: 3.6rem;
   }
-
   .pattern-section {
     padding: 4.8rem 0 8rem 0;
   }
-
   .btn-light-top {
     font-size: 1.6rem;
   }
-
   .pattern {
     grid-template-columns: 1fr 1fr;
   }
-
   .pattern-card-heading {
     font-size: 1.6rem;
   }
-
   .display-no-3 {
     display: none;
   }
-
-  .coming-soon::after {
-    top: 14%;
-    right: -35%;
-  }
-
   .pattern-sheet {
     padding: 2.4rem 0 4.8rem 0;
   }
-
-  .footer {
-    padding: 9.6rem 0rem;
+  .pattern-description {
+    padding-right: 0;
   }
 
-  .nav-col {
-    line-height: 0.5rem;
-  }
-
-  .page-heading {
-    font-size: 4.8rem;
-  }
-
-  .main-section {
-    max-width: 100rem;
-  }
-
-  .page-section {
-    margin-left: 4.8rem;
-    margin-right: 4.8rem;
-    overflow: hidden;
-  }
-
+  /******* INSTAGRAM SECTION ********/
   .instagram-heading {
     font-size: 2.4rem;
     margin-left: 2.4rem;
     margin-bottom: 1rem;
   }
-
   .instagram-box {
     padding-top: 2.4rem;
   }
@@ -147,8 +129,9 @@
     width: 75%;
   }
 
-  .pattern-description {
-    padding-right: 0;
+  /******* FOOTER ********/
+  .footer {
+    padding: 9.6rem 0rem;
   }
 
   /******* MOBILE MENU ********/
@@ -221,15 +204,14 @@
 /* BELOW 784px (smaller Tablets) */
 /* **************************** */
 @media (max-width: 49em) {
+  /******* PATTERN ********/
   .pattern-info {
     grid-column: 1 / -1;
   }
-
   .pattern-img-section {
     display: flex;
     flex-direction: column;
   }
-
   .pattern-img-other {
     flex-direction: row;
     width: 20%;
@@ -246,88 +228,63 @@
   .page-section--flex {
     gap: 2.4rem;
   }
-
   .page-heading {
     margin-bottom: 3.6rem;
     font-size: 3.6rem;
   }
-
   .page-heading-secondary {
     font-size: 1.6rem;
   }
-
   .page-text-box {
     width: 100%;
   }
 
+  /******* HERO ********/
   .hero-heading {
     font-size: 6.4rem;
   }
-
   .hero-img-box img {
     width: 100%;
   }
 
+  /******* INSTAGRAM ********/
   .instagram-heading {
     font-size: 1.6rem;
   }
 
+  /******* PATTERN ********/
   .pattern-card {
     padding: 1.2rem;
   }
-
   .add-cart-icon,
   .add-cart-icon:link,
   .add-cart-icon:visited {
     font-size: 2rem;
   }
-
   .pattern--margin {
     margin: 0 4.8rem 2.4rem 4.8rem;
   }
-
-  .coming-soon::after {
-    transform: none;
-    top: 65%;
-    right: -40%;
-    font-size: 1.2rem;
-    padding: 0.5rem 4rem;
-  }
-
   .filter {
     width: 65rem;
   }
-
   .filter-heading {
     font-size: 1.6rem;
   }
-
   .filter-item {
     font-size: 1.2rem;
   }
-
   .level-icon {
     height: 1.6rem;
   }
 
+  /******* FOOTER ********/
   .footer-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6.4rem;
   }
-
   .footer {
     padding: 6.4rem 6.4rem;
-  }
-
-  .nav-col {
-    grid-row: 1;
-    justify-self: auto;
-  }
-
-  .logo-col {
-    grid-row: 2;
-    grid-column: 1 / -1;
   }
 }
 
@@ -335,27 +292,19 @@
 /* BELOW 624px (big phones) */
 /* **************************** */
 @media (max-width: 39em) {
+  /******* HERO ********/
   .hero-heading {
     font-size: 3.6rem;
   }
-
   .hero-section {
     padding: 2.4rem 0;
   }
-
   .hero {
     grid-template-columns: 1.5fr 1fr;
     gap: 2.4rem;
   }
 
-  .coming-soon::after {
-    transform: none;
-    top: 65%;
-    right: -70%;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-  }
-
+  /******* PATTERN ********/
   .filter-heading {
     font-size: 1.2rem;
   }
@@ -373,22 +322,19 @@
     margin-right: 2rem;
   }
 
+  /******* HERO ********/
   .hero {
     grid-template-columns: 1fr 1fr;
   }
-
   .hero-heading {
     margin-bottom: 2.4rem;
   }
-
   .hero-sticker {
     font-size: 1.6rem;
   }
-
   .hero {
     grid-template-columns: 1fr 1fr;
   }
-
   .btn,
   .btn:link,
   .btn:visited {
@@ -396,23 +342,20 @@
     font-size: 1.2rem;
   }
 
+  /******* PATTERN ********/
   .pattern-section {
     padding: 3.6rem 0 4.8rem 0;
   }
-
   .pattern--margin {
     margin: 0 2.4rem 3.2rem 2.4rem;
   }
-
   .heading-pattern-section {
     margin-bottom: 1.6rem;
     font-size: 3.6rem;
   }
-
   .pattern-card-price {
     font-size: 1.2rem;
   }
-
   .add-cart-icon,
   .add-cart-icon:link,
   .add-cart-icon:visited {
@@ -431,56 +374,39 @@
     padding-top: 4rem;
     gap: 4rem;
     background-color: rgba(252, 252, 252, 0.97);
-
-    /* 1) hide the element visually */
     opacity: 1;
-
-    /* 2)make it unaccesible to mouse and keyboard */
-    /* pointer-events: 0; */
-
-    /* 3) hide it from screen readers */
-    /* visibility: hidden; */
   }
-
   .filter-btn {
     margin-top: 3.2rem;
   }
-
   .filter-icon {
     color: #6d7856;
     font-size: 2.4rem;
   }
-
   .filter-icon:hover,
   .filter-icon:active {
     color: #414834;
   }
-
   .filter-heading {
     font-size: 2.4rem;
   }
-
   .filter-item {
     font-size: 2rem;
   }
-
   .level-icon {
     height: 2rem;
   }
 
-  /* ****** */
+  /******* INSTAGRAM ********/
 
   .instagram-gallery {
     grid-template-columns: 1fr 1fr;
   }
-
   .instagram-heading {
     margin-right: 1.2rem;
   }
 
-  .nav-col {
-    line-height: 1.5;
-  }
+  /******* FOOTER ********/
   .footer {
     padding: 3.6rem;
   }
@@ -493,26 +419,25 @@
   .page-heading {
     font-size: 3rem;
   }
+  .margin {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
+  /******* HERO ********/
   .hero {
     grid-template-columns: 1fr;
     gap: 1.6rem;
   }
 
+  /******* PATTERN ********/
   .heading-pattern-section {
     font-size: 3rem;
   }
-
   .pattern {
     grid-template-columns: 1fr;
   }
-
   .pattern-card-price {
     font-size: 1.6rem;
-  }
-
-  .margin {
-    margin-left: 3rem;
-    margin-right: 3rem;
   }
 }
