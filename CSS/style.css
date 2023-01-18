@@ -204,6 +204,19 @@ header {
 /* NAV SECTION ALL PAGES */
 /* **************************** */
 
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: 250ms ease;
+  z-index: 1;
+}
+
+.navbar.scroll {
+  box-shadow: 0 15px 50px -10px rgba(36, 62, 54, 0.11);
+}
+
 .main-nav-list {
   list-style: none;
   gap: 3em;

@@ -26,12 +26,33 @@ closeMenubtn.addEventListener("click", function () {
 });
 
 //
+// ***** HEADER - ALL PAGES ***** //
+//
+
+const nav = document.getElementById("navbar");
+
+// WHEN SCROLLING
+window.addEventListener("scroll", () => {
+  let scrollPos = window.scrollY;
+
+  if (scrollPos) {
+    if (scrollPos > 10) {
+      nav.classList.add("scroll");
+    } else {
+      nav.classList.remove("scroll");
+    }
+  }
+});
+
+//
 // ***** PATTERN PAGE - DROP-DOWN-MENU ***** //
 //
+
 const dropbtn = document.querySelector(".dropbtn");
 const dropDownContent = document.querySelector(".dropDownContent");
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content //
+
 dropbtn.addEventListener("click", function () {
   dropDownContent.classList.toggle("open");
 });
