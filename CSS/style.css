@@ -260,6 +260,7 @@ header {
 }
 
 .main-section {
+  margin-top: 70px;
   max-width: 1300px;
   overflow: hidden;
 }
