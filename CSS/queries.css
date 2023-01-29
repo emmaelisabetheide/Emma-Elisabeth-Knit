@@ -6,9 +6,7 @@
   .footer-section {
     grid-template-columns: 3fr 1fr 1fr;
   }
-  body {
-    max-width: 120rem;
-  }
+
   header {
     padding: 0 2rem;
   }
@@ -255,7 +253,7 @@
   .hero-heading {
     font-size: 6.4rem;
   }
-  .hero-img-box img {
+  .section-img-box img {
     width: 100%;
   }
 
@@ -299,14 +297,14 @@
 /* BELOW 624px (big phones) */
 /* **************************** */
 @media (max-width: 39em) {
-  /******* HERO ********/
+  /******* HERO / About********/
   .hero-heading {
     font-size: 3.6rem;
   }
-  .hero-section {
+  .section {
     padding: 2.4rem 0;
   }
-  .hero {
+  .inner-section {
     grid-template-columns: 1.5fr 1fr;
     gap: 2.4rem;
   }
