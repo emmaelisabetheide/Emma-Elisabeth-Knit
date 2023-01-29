@@ -133,6 +133,18 @@
   .footer {
     padding: 9.6rem 0rem;
   }
+  .footer-sec {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 30%;
+  }
+  .footer-nav {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .nav-col {
+    grid-row: 1;
+  }
 
   /******* MOBILE MENU ********/
 
@@ -278,11 +290,6 @@
   }
 
   /******* FOOTER ********/
-  .footer-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6.4rem;
-  }
   .footer {
     padding: 6.4rem 6.4rem;
   }
