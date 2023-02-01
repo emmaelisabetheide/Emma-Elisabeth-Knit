@@ -15,70 +15,80 @@
       src="https://kit.fontawesome.com/7e265188ef.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="CSS/pattern-store.css" />
+
     <title>EMMA</title>
   </head>
-  <body>
+  <!-- --------------- -->
+  <!-- HEADER SECTION -->
+  <!-- --------------- -->
+  <header class="flex align-items--center navbar" id="navbar">
+    <a class="header-logo" href="index.html">
+      <img
+        class="logo"
+        alt="EMMA by Emma Elisabeth Knit logo"
+        src="Img/Logo/Ren logo.svg"
+      />
+    </a>
     <!-- --------------- -->
-    <!-- HEADER SECTION -->
+    <!-- NAV SECTION -->
     <!-- --------------- -->
-    <header>
-      <a href="/index.html">
-        <img
-          class="logo"
-          alt="EMMA by Emma Elisabeth Knit logo"
-          src="/Img/Logo/Ren logo.svg"
-        />
-      </a>
-      <!-- --------------- -->
-      <!-- NAV SECTION -->
-      <!-- --------------- -->
-      <nav class="main-nav">
-        <div class="new-menu">
-          <div class="dropdown" data-dropdown>
-            <button class="btn-dropdown" data-dropdown-btn>
-              <i class="fa-solid fa-bars dropdown-icon"></i>
-            </button>
-            <div class="dropdown-menu">
-              <ul class="dropdown-list">
-                <li>
-                  <a class="main-nav-link" href="/pattern.html">OPPSKRIFTER</a>
-                </li>
-                <li><a class="main-nav-link" href="/about.html">OM EMMA</a></li>
-                <li>
-                  <a class="main-nav-link" href="/contact.html">Kontakt</a>
-                </li>
-                <li>
-                  <a class="main-nav-link" href="/sales-conditions.html"
-                    >Salgsbetingelser</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="/privacy-page.html"
-                    >Personvern & vilkår</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="#"
-            ><i class="fa-solid fa-cart-shopping icon-cart nav-cta"></i
-          ></a>
-        </div>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="/pattern.html">OPPSKRIFTER</a></li>
-          <li><a class="main-nav-link" href="/about.html">OM EMMA</a></li>
-          <li>
-            <a class="main-nav-link" href="/sales-conditions.html"
-              >Salgsbetingelser</a
-            >
-          </li>
-          <a href="#"><i class="fa-solid fa-cart-shopping icon-cart"></i></a>
-        </ul>
-      </nav>
-    </header>
 
+    <nav class="main-nav">
+      <button class="btn-mobile-nav open-mobile">
+        <i class="fa-solid fa-bars menu-icon menu-icon--open"></i>
+      </button>
+      <button class="btn-mobile-nav close-mobile hide">
+        <i class="fa-solid fa-xmark menu-icon menu-icon--close"></i>
+      </button>
+      <!-- NAV MENU: SMALL SCREENS -->
+      <ul
+        class="main-nav-list-mobile flex flex-dir-column align-items--center hide"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#pattern"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#about">OM EMMA</a>
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#contact">Kontakt</a>
+        </li>
+
+        <!-- <li>
+          <a class="main-nav-link cursor-pointer" href="#salesconditions"
+            >Salgsbetingelser</a
+          >
+        </li> -->
+      </ul>
+      <!-- NAV MENU: BIG SCREEN -->
+      <ul
+        class="main-nav-list font-size-1-6 big-screen flex align-items--center"
+      >
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#pattern"
+            >OPPSKRIFTER</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#about">OM EMMA</a>
+        </li>
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#contact">Kontakt</a>
+        </li>
+        <!-- 
+        <li>
+          <a class="main-nav-link cursor-pointer" href="#salesconditions"
+            >Salgsbetingelser</a
+          >
+        </li> -->
+      </ul>
+    </nav>
+  </header>
     <!-- ---------------- -->
     <!-- PAGE SECTION -->
     <!-- ---------------- -->
@@ -145,73 +155,52 @@
           </div>
         </div>
       </div>
-
-      <!-- --------------- -->
-      <!-- TO TOP ICON -->
-      <!-- --------------- -->
-
-      <div class="to-top-col">
-        <a href="#"><i class="fa-solid fa-angles-up to-top-icon"></i></a>
-      </div>
     </main>
   </body>
   <!-- --------------- -->
   <!-- FOOTER SECTION -->
   <!-- --------------- -->
-  <footer class="footer">
-    <div class="footer-section">
-      <div class="logo-col">
-        <ul class="social-links">
+  <footer class="footer container">
+    <section>
+      <article class="flex flex-dir-column footer-section">
+        <ul class="social-links flex">
           <li>
             <a
-              class="social-icon"
-              target="_blank"
-              href="https://www.instagram.com/emmaelisabethknit/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="social-icon"
+              class="social-icon font-size-3-6"
               target="_blank"
               href="https://www.facebook.com/Emmaelisabethknit"
               s
               ><i class="fa-brands fa-facebook"></i
             ></a>
           </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.ravelry.com/designers/emma-elisabeth-eide"
+              s
+              ><i class="fa-brands fa-ravelry"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="social-icon font-size-3-6"
+              target="_blank"
+              href="https://www.instagram.com/emmaelisabethknit/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
         </ul>
-        <a class="footer-link" href="mailto:emmaelisabethknit@gmail.com"
+        <a
+          class="footer-link font-size-1-6"
+          href="mailto:emmaelisabethknit@gmail.com"
           >emmaelisabethknit@gmail.com</a
         >
-        <p class="copyright">
-          Copyright &copy; 2022 by Emma Elisabeth Knit,<br />
+        <p class="copyright font-size-1-4">
+          Copyright &copy; 2023 by Emma Elisabeth Knit,<br />
           Inc. All rights reserved.
         </p>
-      </div>
-      <nav class="nav-col">
-        <p class="footer-heading">Info</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="/contact.html">Kontakt</a></li>
-          <li>
-            <a class="footer-link" href="/sales-conditions.html"
-              >Salgsbetingelser</a
-            >
-          </li>
-          <li>
-            <a class="footer-link" href="/privacy-page.html"
-              >Personvern og vilkår</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <nav class="nav-col">
-        <p class="footer-heading">Sider</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="/pattern.html">Oppskrifter</a></li>
-          <li><a class="footer-link" href="/about.html">Om Emma</a></li>
-          <li><a class="footer-link" href="#">Handlekurv</a></li>
-        </ul>
-      </nav>
-    </div>
+      </article>
+    </section>
   </footer>
 </html>
