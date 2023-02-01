@@ -1,8 +1,4 @@
 /* 
---- 01 TYPOGRAPHY SYSTEM
-
-- FONT SIZE SYSTEM (px)
-7 / 10 / 16 / 24 / 30 / 36 / 51 / 81 / 121 
 
 - FONT WEIGHTS
 Default: 400
@@ -306,20 +302,18 @@ header {
   filter: opacity(95%);
 }
 
+/* HEADING */
 .page-heading {
   color: #6d7856;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
-
 .h1-heading {
   margin-bottom: 8rem;
 }
-
 .h2-heading {
   margin-bottom: 3rem;
 }
-
 .subheading {
   margin-bottom: 6.4rem;
 }
@@ -359,6 +353,54 @@ header {
   color: #576045;
   margin-bottom: 1.6rem;
 }
+
+/* **************************** */
+/* BENEFITS SECTION */
+/* **************************** */
+.benefits-section {
+  background-color: #8a9378;
+  font-family: "inter", sans-serif;
+  color: #fcfff7;
+}
+
+.benefit-box {
+  width: 80%;
+  text-align: center;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefit-icon {
+  color: #e2e4dd;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-icon:hover {
+  color: #fcfff7;
+}
+
+.benefit-header {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fcfff7;
+  font-size: 2rem;
+}
+
+.benefit-text {
+  align-self: center;
+  width: 60%;
+  color: #f6f7f5;
+  font-size: 1.6rem;
+}
+
+/* **************************** */
+/* ABOUT SECTION */
+/* **************************** */
 
 /* **************************** */
 /* INSTAGRAM SECTION */
@@ -412,10 +454,6 @@ header {
 .gallery-item img:hover {
   transform: scale(1.1);
 }
-
-/* **************************** */
-/* ABOUT SECTION */
-/* **************************** */
 
 /* **************************** */
 /* PATTERNS SECTION  */
