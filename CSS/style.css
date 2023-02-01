@@ -618,6 +618,15 @@ header {
 /* **************************** */
 /* CONTACT SECTION */
 /* **************************** */
+.contact-section {
+  background-color: #8a9378;
+}
+
+.contact-heading {
+  color: #fcfcfc;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
 
 .contact-form {
   background-color: none;
@@ -631,13 +640,14 @@ header {
 .input-field {
   padding: 1rem;
   border: 1px solid #6d7856;
-  background-color: #fff;
+  background-color: #e2e4dd;
   width: 50rem;
   color: #576045;
 }
 
 .input-field:focus {
-  outline: 1px solid #6d7856;
+  outline: 1px solid #343a40;
+  background-color: #fcfcfc;
 }
 
 .message-field {
@@ -650,54 +660,21 @@ header {
   width: 50rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  padding: 1.6rem 3.6rem;
+  color: #6d7856;
+  box-shadow: 0 0 1rem rgba(67, 71, 57, 0.268);
+  transition: all 0.2s;
+  text-decoration: none;
+  background-color: #fcfcfc;
+  border: none;
+}
+
+.btn--contact:hover {
+  background-color: #e2e4dd;
 }
 
 .ps {
-  color: #7c8667;
-}
-
-/* **************************** */
-/* PRIVACY SECTION */
-/* **************************** */
-.privacy-policy-section {
-  background-color: #8a9378;
-}
-.section-left {
-  border-right: 1px solid #6d7856;
-}
-.heading-light {
-  color: #fcfff7;
-}
-.page-heading-secondary {
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 0.5rem;
-  margin-bottom: 1.6rem;
-  font-size: 20px;
-}
-
-.page-text-light {
-  line-height: 1.6;
-  color: #fcfff7;
-}
-
-.list-item-light {
-  line-height: 1.6;
-  color: #fcfff7;
-}
-
-.link-light:link,
-.link-light:visited {
-  text-decoration: none;
-  color: #fcfff7;
-  margin-bottom: 3.2rem;
-}
-
-.link-light:hover,
-.link-light:active {
   color: #e2e4dd;
-  transition: all 0.3s;
 }
 
 /* **************************** */
@@ -802,8 +779,13 @@ header {
 /* **************************** */
 
 .footer {
-  border-top: 1px solid #eee;
+  background-color: rgba(138, 147, 120, 0.409);
   text-align: center;
+  transition: all 0.3s;
+}
+
+.footer:hover {
+  background-color: #fcfcfc;
 }
 
 .footer-section {
