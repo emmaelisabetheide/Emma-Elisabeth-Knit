@@ -1,35 +1,15 @@
 /* **************************** */
-/* BELOW 1344px (smalles computers) */
-/* **************************** */
-
-@media (max-width: 85em) {
-  .footer-section {
-    grid-template-columns: 3fr 1fr 1fr;
-  }
-
-  header {
-    padding: 0 2rem;
-  }
-}
-
-/* **************************** */
 /* BELOW 1200px (Landscape tablets) */
 /* **************************** */
 
 @media (max-width: 75em) {
-  /* MAKES EVERYTHING IN REM SMALLER OR LARGER */
   html {
     font-size: 56.25%;
   }
 
-  /******* HERO ********/
+  /******* HERO SECTION ********/
   .hero-heading {
     font-size: 9.6rem;
-  }
-
-  /******* FOOTER ********/
-  .footer-section {
-    grid-template-columns: 2fr 1fr 1fr;
   }
 }
 
@@ -37,16 +17,14 @@
 /* BELOW 1056px (smaller landscape tablets) */
 /* **************************** */
 @media (max-width: 66em) {
-  .page-heading {
-    margin-bottom: 6.4rem;
+  /* ABOUT SECTION ********/
+  .about-section {
+    grid-template-columns: 1fr 1fr;
   }
-
-  /******* HERO ********/
-  .hero-section {
-    padding: 4.8rem 0;
+  .section-img-box {
+    margin-top: auto;
   }
-
-  /******* PATTERN ********/
+  /* PATTERN SECTION ********/
   .pattern-card {
     padding: 1.6rem;
   }
@@ -58,7 +36,7 @@
     top: 2%;
     left: 3%;
   }
-
+  /* PATTERN PAGE ********/
   .btn--with-icon {
     width: 70%;
   }
@@ -68,26 +46,44 @@
 /* BELOW 896px (Tablets) */
 /* **************************** */
 @media (max-width: 56em) {
+  header {
+    padding: 0 2.5rem;
+  }
   .page-section {
-    margin-left: 4.8rem;
-    margin-right: 4.8rem;
     overflow: hidden;
   }
   .page-heading {
     font-size: 4.8rem;
   }
-  .main-section {
-    max-width: 100rem;
-  }
 
-  /******* HERO ********/
+  /* HERO SECTION ********/
   .hero-heading {
     font-size: 8rem;
     letter-spacing: 0.3rem;
     margin-bottom: 6.4rem;
   }
 
-  /******* PATTERN ********/
+  /* BENEFIT SECTION ********/
+  .benefit-text {
+    width: 100%;
+  }
+  .benefit-icon {
+    font-size: 4rem;
+  }
+  .benefit-header {
+    font-size: 1.6rem;
+  }
+
+  /* ABOUT SECTION ********/
+  .page-text-2 {
+    position: absolute;
+    width: 75%;
+  }
+  .section-img-box {
+    margin-bottom: 2rem;
+  }
+
+  /* PATTERN SECTION ********/
   .heading-pattern-section {
     font-size: 3.6rem;
   }
@@ -113,35 +109,19 @@
     padding-right: 0;
   }
 
-  /******* INSTAGRAM SECTION ********/
+  /* INSTAGRAM SECTION ********/
+  .instagram-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
   .instagram-heading {
     font-size: 2.4rem;
-    margin-left: 2.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
   .instagram-box {
     padding-top: 2.4rem;
   }
-
   .page-text-box {
     width: 75%;
-  }
-
-  /******* FOOTER ********/
-  .footer {
-    padding: 9.6rem 0rem;
-  }
-  .footer-sec {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    width: 30%;
-  }
-  .footer-nav {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
-  .nav-col {
-    grid-row: 1;
   }
 
   /******* MOBILE MENU ********/
@@ -149,7 +129,6 @@
   header {
     position: relative;
   }
-
   .btn-mobile-nav {
     display: block;
     border: none;
@@ -160,50 +139,40 @@
     right: 3%;
     z-index: 2;
   }
-
   .header-logo {
     z-index: 3;
   }
-
   .main-nav-list {
     opacity: 0;
     pointer-events: none;
     visibility: none;
   }
-
   .menu-icon {
     color: #6d7856;
     font-size: 3.5rem;
     padding: 1rem;
   }
-
   .menu-icon:hover,
   .menu-icon:focus {
     color: #8a9378;
   }
-
   .menu-icon--open {
     background-color: #fcfcfc;
   }
-
   .menu-icon--close {
     background-color: rgba(252, 255, 247, 0.95);
   }
-
   .nav-open .menu-icon--close {
     display: block;
   }
-
   .nav-open .menu-icon--open {
     display: block;
   }
-
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
   }
-
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 2.5rem;
@@ -214,7 +183,36 @@
 /* BELOW 784px (smaller Tablets) */
 /* **************************** */
 @media (max-width: 49em) {
-  /******* PATTERN ********/
+  /* HERO SECTION ********/
+  .hero-section {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .hero-img {
+    grid-row: 2;
+  }
+  .btn:link,
+  .btn:visited {
+    position: absolute;
+    top: 16%;
+    padding: 0.7rem 1.4rem;
+  }
+
+  /* ABOUT SECTION ********/
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+  .page-text-2 {
+    position: inherit;
+    width: 100%;
+  }
+
+  /* PATTERN SECTION ********/
+  .language-filter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PATTERN PAGE ********/
   .pattern-info {
     grid-column: 1 / -1;
   }
@@ -235,9 +233,6 @@
 /* BELOW 704px (small Tablets) */
 /* **************************** */
 @media (max-width: 44em) {
-  .page-section--flex {
-    gap: 2.4rem;
-  }
   .page-heading {
     margin-bottom: 3.6rem;
     font-size: 3.6rem;
@@ -249,27 +244,24 @@
     width: 100%;
   }
 
-  /******* HERO ********/
+  /* HERO SECTION ********/
   .hero-heading {
     font-size: 6.4rem;
   }
-  .section-img-box img {
-    width: 100%;
+
+  /* BENEFIT SECTION ********/
+  .benefit-box {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+    width: 50%;
+  }
+  .benefit-icon {
+    margin-bottom: 1rem;
   }
 
-  /******* INSTAGRAM ********/
-  .instagram-heading {
-    font-size: 1.6rem;
-  }
-
-  /******* PATTERN ********/
+  /* PATTERN SECTION ********/
   .pattern-card {
     padding: 1.2rem;
-  }
-  .add-cart-icon,
-  .add-cart-icon:link,
-  .add-cart-icon:visited {
-    font-size: 2rem;
   }
   .pattern--margin {
     margin: 0 4.8rem 2.4rem 4.8rem;
@@ -281,15 +273,10 @@
     font-size: 1.6rem;
   }
   .filter-item {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   .level-icon {
     height: 1.6rem;
-  }
-
-  /******* FOOTER ********/
-  .footer {
-    padding: 6.4rem 6.4rem;
   }
 }
 
@@ -297,21 +284,26 @@
 /* BELOW 624px (big phones) */
 /* **************************** */
 @media (max-width: 39em) {
-  /******* HERO / About********/
-  .hero-heading {
-    font-size: 3.6rem;
-  }
-  .section {
-    padding: 2.4rem 0;
-  }
-  .inner-section {
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2.4rem;
+  /* HERO SECTION ********/
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    top: 19%;
   }
 
-  /******* PATTERN ********/
+  /* INSTAGRAM SECTION ********/
+  .instagram-heading {
+    font-size: 1.8rem;
+  }
+
+  /* PATTERN SECTION ********/
   .filter-heading {
     font-size: 1.2rem;
+  }
+  .pattern-text--ps {
+    margin-top: 5rem;
   }
 }
 
@@ -319,35 +311,33 @@
 /* BELOW 512px (big phones) */
 /* **************************** */
 @media (max-width: 34em) {
-  /* .pattern {
-    grid-template-columns: 1fr;
-  } */
-  .page-section {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  .section {
+    width: 90%;
   }
 
-  /******* HERO ********/
-  .hero {
-    grid-template-columns: 1fr 1fr;
-  }
+  /* HERO SECTION ********/
   .hero-heading {
     margin-bottom: 2.4rem;
+    font-size: 3.6rem;
   }
   .hero-sticker {
-    font-size: 1.6rem;
-  }
-  .hero {
-    grid-template-columns: 1fr 1fr;
-  }
-  .btn,
-  .btn:link,
-  .btn:visited {
-    padding: 1rem 2rem;
     font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .btn:visited,
+  .btn:link {
+    position: inherit;
   }
 
-  /******* PATTERN ********/
+  /* INSTAGRAM SECTION ********/
+  .instagram-box {
+    width: 90%;
+  }
+  .instagram-heading {
+    margin-right: 1.2rem;
+  }
+
+  /* PATTERN SECTION ********/
   .pattern-section {
     padding: 3.6rem 0 4.8rem 0;
   }
@@ -361,59 +351,16 @@
   .pattern-card-price {
     font-size: 1.2rem;
   }
-  .add-cart-icon,
-  .add-cart-icon:link,
-  .add-cart-icon:visited {
-    font-size: 1.6rem;
-  }
 
-  /* ** FILTER NEW SMALL MENU */
-
-  .filter-section {
-    display: flex;
-    position: absolute;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    padding-top: 4rem;
-    gap: 4rem;
-    background-color: rgba(252, 252, 252, 0.97);
-    opacity: 1;
+  /* CONTACT SECTION ********/
+  .contact-heading {
+    font-size: 3.6rem;
   }
-  .filter-btn {
-    margin-top: 3.2rem;
+  .input-field {
+    width: 30rem;
   }
-  .filter-icon {
-    color: #6d7856;
-    font-size: 2.4rem;
-  }
-  .filter-icon:hover,
-  .filter-icon:active {
-    color: #414834;
-  }
-  .filter-heading {
-    font-size: 2.4rem;
-  }
-  .filter-item {
-    font-size: 2rem;
-  }
-  .level-icon {
-    height: 2rem;
-  }
-
-  /******* INSTAGRAM ********/
-
-  .instagram-gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-  .instagram-heading {
-    margin-right: 1.2rem;
-  }
-
-  /******* FOOTER ********/
-  .footer {
-    padding: 3.6rem;
+  .btn--contact {
+    width: 30rem;
   }
 }
 
@@ -421,28 +368,96 @@
 /* BELOW 368px (Phones) */
 /* **************************** */
 @media (max-width: 23em) {
+  .section {
+    width: 100%;
+  }
   .page-heading {
     font-size: 3rem;
   }
-  .margin {
-    margin-left: 3rem;
-    margin-right: 3rem;
+
+  /* NAV SECTION ********/
+  .menu-icon {
+    font-size: 3rem;
+  }
+  .logo {
+    height: 3em;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.8rem;
   }
 
-  /******* HERO ********/
-  .hero {
+  /* BENEFIT SECTION ********/
+  .benefit-box {
+    width: 100%;
+  }
+
+  /* INSTAGRAM SECTION ********/
+  .instagram-box {
+    width: 100%;
+  }
+  .instagram-heading {
+    margin-right: 0;
+  }
+  .instagram-gallery {
     grid-template-columns: 1fr;
-    gap: 1.6rem;
   }
 
-  /******* PATTERN ********/
+  /* PATTERN SECTION ********/
+  .pattern-section {
+    padding-top: 4rem;
+  }
+  .pattern {
+    margin: 0 3rem;
+  }
   .heading-pattern-section {
     font-size: 3rem;
   }
-  .pattern {
+  .language-filter {
     grid-template-columns: 1fr;
+  }
+  .dropDown {
+    text-align: center;
+  }
+  .dropbtn {
+    font-size: 1.6rem;
+  }
+  .pattern-heading {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
   }
   .pattern-card-price {
     font-size: 1.6rem;
+  }
+  .pattern-text--ps {
+    font-size: 1.2rem;
+  }
+
+  /* CONTACT SECTION ********/
+  .contact-heading {
+    font-size: 2.4rem;
+  }
+  .input-field {
+    width: 25rem;
+  }
+  .btn--contact {
+    width: 25rem;
+  }
+  .contact-form {
+    gap: 1rem;
+  }
+
+  /* FOOTER SECTION ********/
+  .footer-section {
+    width: 90%;
+  }
+  .social-icon {
+    font-size: 2.4rem;
+  }
+  .footer-link,
+  .copyright {
+    font-size: 1.2rem;
   }
 }

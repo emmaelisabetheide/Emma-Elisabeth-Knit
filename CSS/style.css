@@ -461,10 +461,6 @@ header {
 /* **************************** */
 /* PATTERNS SECTION  */
 /* **************************** */
-
-.pattern-section {
-}
-
 .pattern-heading {
   color: #6d7856;
 }
@@ -638,12 +634,9 @@ header {
 }
 
 .contact-form {
-  background-color: none;
-}
-
-.contact-form {
   gap: 2.4rem;
   border: none;
+  background-color: none;
 }
 
 .input-field {
