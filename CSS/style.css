@@ -556,6 +556,12 @@ header {
   text-transform: uppercase;
 }
 
+.pattern-text--ps {
+  color: #8a9378;
+  text-align: center;
+  margin-top: 9rem;
+}
+
 /* FILTER MENU */
 
 .dropdown {
@@ -671,6 +677,7 @@ header {
 
 .btn--contact:hover {
   background-color: #e2e4dd;
+  cursor: pointer;
 }
 
 .ps {
@@ -781,7 +788,7 @@ header {
 .footer {
   background-color: rgba(138, 147, 120, 0.409);
   text-align: center;
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .footer:hover {
