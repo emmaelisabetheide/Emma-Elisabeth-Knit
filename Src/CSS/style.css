@@ -98,6 +98,9 @@ body {
 .grid--4-cols {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.grid--6-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 /* JUSTIFY */
 .justify-items--center {
@@ -261,7 +264,7 @@ header {
 }
 
 .main-section {
-  margin-top: 70px;
+  padding-top: 10rem;
   overflow: hidden;
 }
 
@@ -275,6 +278,7 @@ header {
   box-shadow: 0 0 1rem rgba(22, 24, 17, 0.268);
   transition: all 0.2s;
   text-decoration: none;
+  text-align: center;
 }
 
 .btn:hover,
@@ -683,11 +687,16 @@ header {
 /* **************************** */
 /* EACH PATTERN PAGE */
 /* **************************** */
+.pattern-page {
+  width: 90%;
+}
+.page-section {
+  padding: 9rem 0 11rem 0;
+  display: none;
+}
 
-.pattern-grid {
-  display: grid;
-  gap: 6.4rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.active {
+  display: inherit;
 }
 
 .pattern-img-section {
