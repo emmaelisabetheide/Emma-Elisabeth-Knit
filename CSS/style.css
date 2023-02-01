@@ -401,6 +401,9 @@ header {
 /* **************************** */
 /* ABOUT SECTION */
 /* **************************** */
+.about-section {
+  grid-template-columns: 1.5fr 1fr;
+}
 
 /* **************************** */
 /* INSTAGRAM SECTION */
