@@ -460,11 +460,10 @@ header {
 /* **************************** */
 
 .pattern-section {
-  background-color: #8a9378;
 }
 
 .pattern-heading {
-  color: #fcfff7;
+  color: #6d7856;
 }
 
 .pattern-sheet {
@@ -473,7 +472,6 @@ header {
 
 /* PATTERN CARD */
 .pattern-card {
-  background-color: #fcfff7;
   padding: 2.4rem;
   box-shadow: 0 2.4rem 4.8rem rgba(52, 58, 64, 0.08);
   transition: all 0.4s;
@@ -523,7 +521,7 @@ header {
   content: "norsk";
   font-size: 1.6rem;
   color: #6d7856;
-  background-color: #fcfff7;
+  background-color: #fcfcfc;
   position: absolute;
   top: 4%;
   left: 5%;
@@ -536,7 +534,7 @@ header {
   content: "svenska";
   font-size: 1.6rem;
   color: #6d7856;
-  background-color: #fcfff7;
+  background-color: #fcfcfc;
   position: absolute;
   top: 4%;
   left: 5%;
@@ -549,7 +547,7 @@ header {
   content: "english";
   font-size: 1.6rem;
   color: #6d7856;
-  background-color: #fcfff7;
+  background-color: #fcfcfc;
   position: absolute;
   top: 4%;
   left: 5%;
@@ -570,18 +568,18 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 2rem;
-  color: #fcfff7;
+  color: #7c8667;
   letter-spacing: 0.5rem;
   padding: 0 0 1rem 1rem;
   cursor: pointer;
   border: none;
-  background-color: #8a9378;
+  background-color: #fcfcfc;
   transition: all 0.5s;
 }
 
 .dropbtn:hover,
 .dropbtn:active {
-  color: #e2e4dd;
+  color: #576045;
 }
 
 .dropDownContent {
@@ -592,11 +590,11 @@ header {
   z-index: 1;
   width: 22rem;
   padding: 1rem;
-  background-color: rgb(138, 147, 120);
+  background-color: rgba(252, 252, 252, 0.95);
   transition: all 0.5s;
-  border-bottom: 0.1rem solid #e2e4dd;
-  border-left: 0.1rem solid #e2e4dd;
-  border-right: 0.1rem solid #e2e4dd;
+  border-bottom: 0.1rem solid rgba(138, 147, 120, 0.7);
+  border-left: 0.1rem solid rgba(138, 147, 120, 0.7);
+  border-right: 0.1rem solid rgba(138, 147, 120, 0.7);
 }
 
 .open {
@@ -605,15 +603,16 @@ header {
 
 .filter-item {
   font-size: 2rem;
-  color: #fcfff7;
+  color: #7c8667;
   font-weight: 400;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
 .filter-item:hover {
+  color: #576045;
   cursor: pointer;
-  background-color: rgba(226, 228, 221, 0.193);
+  background-color: #fff;
 }
 
 /* **************************** */
