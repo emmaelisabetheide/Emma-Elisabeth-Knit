@@ -194,6 +194,7 @@ pCloseGln.addEventListener("click", function () {
 //
 // ***** PRODUCT MODAL - CAROUSEL ***** //
 //
+FIXME;
 const slides = document.querySelectorAll(".slide");
 const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
