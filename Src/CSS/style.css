@@ -217,7 +217,7 @@ header {
   z-index: 1;
 }
 
-.navbar.scroll {
+.scroll {
   box-shadow: 0 15px 50px -10px rgba(36, 62, 54, 0.11);
 }
 
