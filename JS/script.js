@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
 });
 
 //
-// ***** PATTERN PAGE - DROP-DOWN-MENU ***** //
+// ***** PATTERN SECTION - DROP-DOWN-MENU ***** //
 //
 
 const dropbtn = document.querySelector(".dropbtn");
@@ -93,4 +93,97 @@ langSvenskaBtn.addEventListener("click", function () {
   langSvenska.classList.remove("hide");
   langEnglish.classList.add("hide");
   langNorsk.classList.add("hide");
+});
+
+//
+// ***** PRODUCT PAGE ***** //
+//
+const fgn = document.getElementById("fgn");
+const fge = document.getElementById("fge");
+const ggn = document.getElementById("ggn");
+const gge = document.getElementById("gge");
+const mgn = document.getElementById("mgn");
+const egn = document.getElementById("egn");
+const egs = document.getElementById("egs");
+const gln = document.getElementById("gln");
+
+// OPEN CLOSE PRODUCT PAGES
+// Fridas genser Norsk --
+const fgnCard = document.getElementById("fgnCard");
+const pCloseFgn = document.getElementById("closeIconFgn");
+fgnCard.addEventListener("click", function () {
+  fgn.classList.add("active");
+});
+pCloseFgn.addEventListener("click", function () {
+  fgn.classList.remove("active");
+});
+
+// Fridas genser English --
+const fgeCard = document.getElementById("fgeCard");
+const pCloseFge = document.getElementById("closeIconFge");
+fgeCard.addEventListener("click", function () {
+  fge.classList.add("active");
+});
+pCloseFge.addEventListener("click", function () {
+  fge.classList.remove("active");
+});
+
+// Malins genser norsk --
+const mgeCard = document.getElementById("mgeCard");
+const pCloseMge = document.getElementById("closeIconMge");
+mgeCard.addEventListener("click", function () {
+  mge.classList.add("active");
+});
+pCloseFge.addEventListener("click", function () {
+  mge.classList.remove("active");
+});
+
+// Guros genser norsk --
+const ggnCard = document.getElementById("ggnCard");
+const pCloseGgn = document.getElementById("closeIconGgn");
+ggnCard.addEventListener("click", function () {
+  ggn.classList.add("active");
+});
+pCloseGgn.addEventListener("click", function () {
+  ggn.classList.remove("active");
+});
+
+// Guros genser english --
+const ggeCard = document.getElementById("ggeCard");
+const pCloseGge = document.getElementById("closeIconGge");
+fgeCard.addEventListener("click", function () {
+  gge.classList.add("active");
+});
+pCloseFge.addEventListener("click", function () {
+  gge.classList.remove("active");
+});
+
+// Evelinagenser norsk --
+const egnCard = document.getElementById("egnCard");
+const pCloseEgn = document.getElementById("closeIconEgn");
+egnCard.addEventListener("click", function () {
+  egn.classList.add("active");
+});
+pCloseEgn.addEventListener("click", function () {
+  egn.classList.remove("active");
+});
+
+// Evelinagenser svenska --
+const egsCard = document.getElementById("egsCard");
+const pCloseEgs = document.getElementById("closeIconEgs");
+egsCard.addEventListener("click", function () {
+  egs.classList.add("active");
+});
+pCloseEgs.addEventListener("click", function () {
+  egs.classList.remove("active");
+});
+
+// Guros lue norsk --
+const glnCard = document.getElementById("glnCard");
+const pCloseGln = document.getElementById("closeIconGln");
+glnCard.addEventListener("click", function () {
+  gln.classList.add("active");
+});
+pCloseGln.addEventListener("click", function () {
+  gln.classList.remove("active");
 });
