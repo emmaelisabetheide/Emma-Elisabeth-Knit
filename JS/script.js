@@ -129,13 +129,13 @@ pCloseFge.addEventListener("click", function () {
 });
 
 // Malins genser norsk --
-const mgeCard = document.getElementById("mgeCard");
-const pCloseMge = document.getElementById("closeIconMge");
-mgeCard.addEventListener("click", function () {
-  mge.classList.add("active");
+const mgnCard = document.getElementById("mgnCard");
+const pCloseMgn = document.getElementById("closeIconMgn");
+mgnCard.addEventListener("click", function () {
+  mgn.classList.add("active");
 });
-pCloseFge.addEventListener("click", function () {
-  mge.classList.remove("active");
+pCloseMgn.addEventListener("click", function () {
+  mgn.classList.remove("active");
 });
 
 // Guros genser norsk --
@@ -151,10 +151,10 @@ pCloseGgn.addEventListener("click", function () {
 // Guros genser english --
 const ggeCard = document.getElementById("ggeCard");
 const pCloseGge = document.getElementById("closeIconGge");
-fgeCard.addEventListener("click", function () {
+ggeCard.addEventListener("click", function () {
   gge.classList.add("active");
 });
-pCloseFge.addEventListener("click", function () {
+pCloseGge.addEventListener("click", function () {
   gge.classList.remove("active");
 });
 
