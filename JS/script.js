@@ -111,9 +111,11 @@ const gln = document.getElementById("gln");
 // Fridas genser Norsk --
 const fgnCard = document.getElementById("fgnCard");
 const pCloseFgn = document.getElementById("closeIconFgn");
+// Open product modal
 fgnCard.addEventListener("click", function () {
   fgn.classList.add("active");
 });
+// Close product modal
 pCloseFgn.addEventListener("click", function () {
   fgn.classList.remove("active");
 });
@@ -184,6 +186,50 @@ const pCloseGln = document.getElementById("closeIconGln");
 glnCard.addEventListener("click", function () {
   gln.classList.add("active");
 });
+// Close product modal
 pCloseGln.addEventListener("click", function () {
   gln.classList.remove("active");
+});
+
+//
+// ***** PRODUCT MODAL - CAROUSEL ***** //
+//
+const slides = document.querySelectorAll(".slide");
+const nextSlide = document.querySelector(".btn-next");
+const prevSlide = document.querySelector(".btn-prev");
+
+// loop through slides
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
+
+// current slide counter
+let curSlide = 0;
+// maximum number of slides
+let maxSlide = slides.length - 1;
+
+// add event listener and next slide functionality
+nextSlide.addEventListener("click", function () {
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+
+// add prev slide functionality
+prevSlide.addEventListener("click", function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide--;
+  }
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
 });
