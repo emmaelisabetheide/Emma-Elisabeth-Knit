@@ -691,7 +691,7 @@ header {
 }
 
 /* **************************** */
-/* EACH PATTERN PAGE */
+/* EACH PRODUCT PAGE */
 /* **************************** */
 .page-section--product {
   margin-top: 5rem;
@@ -746,35 +746,35 @@ header {
   width: 100%;
 }
 .slide-btn {
-  width: 45px;
-  height: 45px;
   border: none;
-  border-radius: 50%;
   z-index: 5;
   cursor: pointer;
-  background-color: rgba(252, 252, 252, 0.99);
+  background-color: rgba(52, 58, 64, 0);
   font-size: 18px;
   text-align: center;
-  box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.3);
 }
-.slide-btn:active {
-  transform: scale(1.1);
-}
-.fa-angle-right,
-.fa-angle-left {
-  color: #6d7856;
-  font-size: 2.5rem;
+
+.arrow-icon {
+  color: rgba(252, 252, 252, 0.413);
+  font-size: 4rem;
   z-index: 6;
 }
+.arrow-icon:hover {
+  color: rgba(252, 252, 252, 0.768);
+}
+.arrow-icon:active {
+  color: #fcfcfc;
+}
+
 .btn-prev {
   position: absolute;
-  top: 450px;
-  left: 80px;
+  top: 550px;
+  left: 190px;
 }
 .btn-next {
   position: absolute;
-  top: 450px;
-  left: 480px;
+  top: 550px;
+  left: 535px;
 }
 
 /* ---- PRODUCT CONTENT ----- */
