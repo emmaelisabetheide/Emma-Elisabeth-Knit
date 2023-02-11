@@ -755,14 +755,11 @@ header {
 }
 
 .arrow-icon {
-  color: rgba(252, 252, 252, 0.413);
+  color: rgba(252, 252, 252, 0.758);
   font-size: 4rem;
   z-index: 6;
 }
 .arrow-icon:hover {
-  color: rgba(252, 252, 252, 0.768);
-}
-.arrow-icon:active {
   color: #fcfcfc;
 }
 
