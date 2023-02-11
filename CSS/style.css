@@ -483,6 +483,7 @@ header {
   transition: all 0.4s;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .pattern-card:hover {
@@ -693,22 +694,10 @@ header {
 /* EACH PATTERN PAGE */
 /* **************************** */
 .page-section--product {
-  display: none;
-  padding: 5rem 10rem 11rem 10rem;
-  /* position */
-  position: fixed;
-  top: 12%;
-  right: 5%;
+  margin-top: 5rem;
+  padding: 10rem 10rem 11rem 10rem;
   width: 90%;
-  height: 85vh;
-  z-index: 4;
-  /* scroll */
-  overflow: scroll;
-  scroll-behavior: smooth;
-  /* colors */
   background-color: rgba(252, 252, 252, 0.99);
-  border: 2px solid #6d7856;
-  box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.5);
 }
 .active {
   display: block;
