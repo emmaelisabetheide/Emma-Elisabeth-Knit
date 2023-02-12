@@ -351,6 +351,9 @@
   .pattern-card-price {
     font-size: 1.2rem;
   }
+  .str-p {
+    font-size: 1rem;
+  }
 
   /* CONTACT SECTION ********/
   .contact-heading {
@@ -415,12 +418,6 @@
   }
   .language-filter {
     grid-template-columns: 1fr;
-  }
-  .dropDown {
-    text-align: center;
-  }
-  .dropbtn {
-    font-size: 1.6rem;
   }
   .pattern-heading {
     font-size: 2.4rem;
