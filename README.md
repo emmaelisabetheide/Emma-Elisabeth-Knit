@@ -1,7 +1,5 @@
 # Emma Elisabeth Knit
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/emmaeheide/)
-
 ## Table of contents
 * [Overview](#overview)
 * [Features](#features)
@@ -34,3 +32,6 @@ The project is created with:
 
 ## Creators
 [Emma Elisabeth Høvik Eide](https://github.com/emmaelisabetheide)
+
+
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/emmaeheide/)
