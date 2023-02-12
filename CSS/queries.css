@@ -36,9 +36,34 @@
     top: 2%;
     left: 3%;
   }
-  /* PATTERN PAGE ********/
+  /* Product PAGE ********/
   .btn--with-icon {
-    width: 70%;
+    width: 100%;
+  }
+  .page-section--product {
+    padding: 10rem 5rem 11rem 5rem;
+  }
+  .content-section {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0rem;
+  }
+  .pattern-description {
+    margin-left: 0;
+  }
+  .pattern-img-section {
+    height: auto;
+    width: 35vw;
+  }
+  .slider {
+    width: 35vw;
+    height: 475px;
+  }
+  .btn-prev {
+    top: 40%;
+  }
+  .btn-next {
+    top: 40%;
   }
 }
 
@@ -105,8 +130,40 @@
   .pattern-sheet {
     padding: 2.4rem 0 4.8rem 0;
   }
+
+  /* PRODUCT PAGE ********/
+  .content-section {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    justify-self: center;
+  }
   .pattern-description {
     padding-right: 0;
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+  .pattern-info {
+    grid-row: 3;
+  }
+  .slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 560px;
+  }
+  .pattern-img-section {
+    margin-left: auto;
+    margin-right: auto;
+    height: 560px;
+    width: 59vw;
+  }
+  .btn-prev {
+    top: 47%;
+    left: 10%;
+  }
+  .btn-next {
+    top: 47%;
+    right: 10%;
   }
 
   /* INSTAGRAM SECTION ********/
@@ -193,9 +250,7 @@
   }
   .btn:link,
   .btn:visited {
-    position: absolute;
-    top: 16%;
-    padding: 0.7rem 1.4rem;
+    width: 100%;
   }
 
   /* ABOUT SECTION ********/
@@ -226,6 +281,12 @@
   }
   .btn--with-icon {
     width: 80%;
+  }
+  .slider {
+    height: 500px;
+  }
+  .pattern-img-section {
+    height: 490px;
   }
 }
 
@@ -278,6 +339,12 @@
   .level-icon {
     height: 1.6rem;
   }
+  .slider {
+    height: 450px;
+  }
+  .pattern-img-section {
+    height: 450px;
+  }
 }
 
 /* **************************** */
@@ -304,6 +371,12 @@
   }
   .pattern-text--ps {
     margin-top: 5rem;
+  }
+  .slider {
+    height: 390px;
+  }
+  .pattern-img-section {
+    height: 390px;
   }
 }
 
@@ -355,6 +428,25 @@
     font-size: 1rem;
   }
 
+  .page-section--product {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pattern-img-section {
+    height: 480px;
+    width: 70vw;
+  }
+  .slider {
+    height: 480px;
+    width: 70vw;
+  }
+  .btn-next {
+    right: 6%;
+  }
+  .btn-prev {
+    left: 6%;
+  }
+
   /* CONTACT SECTION ********/
   .contact-heading {
     font-size: 3.6rem;
@@ -364,6 +456,16 @@
   }
   .btn--contact {
     width: 30rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 491px (Phones) */
+/* **************************** */
+@media (max-width: 30em) {
+  /* PRODUCT PAGE ********/
+  .pattern-img-section {
+    height: 40px;
   }
 }
 

@@ -276,7 +276,7 @@ header {
 .btn:visited {
   border: none;
   background-color: #8a9378;
-  padding: 1.6rem 3.6rem;
+  padding: 1.6rem 0rem;
   color: #fcfff7;
   box-shadow: 0 0 1rem rgba(22, 24, 17, 0.268);
   transition: all 0.2s;
@@ -700,7 +700,6 @@ header {
 
 .arrow-icon {
   color: rgba(252, 252, 252, 0.758);
-
   font-size: 4rem;
   z-index: 6;
 }
@@ -710,12 +709,12 @@ header {
 
 .btn-prev {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 5%;
 }
 .btn-next {
   position: absolute;
-  top: 45%;
+  top: 47%;
   right: 5%;
 }
 
