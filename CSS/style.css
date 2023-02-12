@@ -520,9 +520,10 @@ header {
   color: #576045;
   font-weight: 400;
   font-size: 1.6rem;
+  margin-bottom: 0.5rem;
 }
-.lang-p {
-  font-size: 1.6rem;
+.str-p {
+  font-size: 1.2rem;
   color: #576045;
 }
 
