@@ -780,6 +780,7 @@ header {
 /* **************************** */
 
 .footer {
+  border-top: 1px solid rgba(138, 147, 120, 0);
   background-color: rgba(138, 147, 120, 0.409);
   text-align: center;
   transition: all 1s;
@@ -787,6 +788,7 @@ header {
 
 .footer:hover {
   background-color: #fcfcfc;
+  border-top: 1px solid rgba(138, 147, 120, 0.409);
 }
 
 .footer-section {
