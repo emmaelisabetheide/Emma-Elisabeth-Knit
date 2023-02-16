@@ -248,8 +248,7 @@
   .hero-img {
     grid-row: 2;
   }
-  .btn:link,
-  .btn:visited {
+  .btn-hero {
     width: 100%;
   }
 
@@ -352,9 +351,7 @@
 /* **************************** */
 @media (max-width: 39em) {
   /* HERO SECTION ********/
-  .btn,
-  .btn:link,
-  .btn:visited {
+  .btn-hero {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     top: 19%;
@@ -397,8 +394,7 @@
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
   }
-  .btn:visited,
-  .btn:link {
+  .btn-hero {
     position: inherit;
   }
 

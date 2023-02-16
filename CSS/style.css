@@ -276,7 +276,6 @@ header {
 .btn:visited {
   border: none;
   background-color: #8a9378;
-  padding: 1.6rem 0rem;
   color: #fcfff7;
   box-shadow: 0 0 1rem rgba(22, 24, 17, 0.268);
   transition: all 0.2s;
@@ -359,6 +358,10 @@ header {
   letter-spacing: 0.15em;
   color: #576045;
   margin-bottom: 1.6rem;
+}
+
+.btn-hero {
+  padding: 1.6rem 3.4rem;
 }
 
 /* **************************** */
@@ -754,6 +757,7 @@ header {
   width: 60%;
   margin-top: 3.6rem;
   cursor: pointer;
+  padding: 1.6rem 0rem;
 }
 
 .add-cart-icon--btn {
