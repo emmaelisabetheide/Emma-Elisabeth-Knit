@@ -13,6 +13,8 @@ The goal is to get this project to a level where customers safely can buy a patt
 
 #### Live link https://emmaelisabethknit.netlify.app/
 
+https://github.com/emmaelisabetheide/Emma-Elisabeth-Knit/Img/Logo/emmaelsiabethknitpage
+
 ## Features
 - Each product page has a casousel with product images.
 - The images on the instagram section directs you to the actual instagram post.
