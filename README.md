@@ -38,9 +38,6 @@ The project is created with:
 ### Setting up Dev:
 Clone repo: `gh` `repo` `clone` emmaelisabetheide/Emma-Elisabeth-Knit
 
-`cd` Emma-Elisabeth-Knit/
-
-packagemanager install
 
 ### Deploy:
 The main branch will be deployed automaticly by Netlify
