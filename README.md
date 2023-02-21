@@ -5,6 +5,7 @@
 * [Features](#features)
 * [Status](#status)
 * [Technologies](#technologies)
+* [Build and deploy](#build-and-deploy)
 * [Creators](#creators)
 
 ## Overview
@@ -32,6 +33,14 @@ The project is created with:
 - HTML
 - CSS
 - Vanilla JavaScript
+
+## Build and deploy
+### Setting up Dev:
+Clone repo: `gh` `repo` `clone` emmaelisabetheide/Emma-Elisabeth-Knit
+
+
+### Deploy:
+The main branch will be deployed automaticly by Netlify
 
 ## Creators
 [Emma Elisabeth Høvik Eide](https://github.com/emmaelisabetheide)
