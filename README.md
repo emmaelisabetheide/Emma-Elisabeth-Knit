@@ -35,11 +35,12 @@ The project is created with:
 - Vanilla JavaScript
 
 ## Build and deploy
-### Setting up Dev:
-Clone repo: `gh` `repo` `clone` emmaelisabetheide/Emma-Elisabeth-Knit
+### Run this project locally
+1. Clone repo: `gh repo clone emmaelisabetheide/Emma-Elisabeth-Knit`
+2. Run `npm install` in your bash/command line
+3. Run `npm run dev` in your bash/command line
 
-
-### Deploy:
+### Deploy
 The main branch will be deployed automaticly by Netlify
 
 ## Creators
