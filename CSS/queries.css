@@ -425,6 +425,7 @@
     padding-right: 1rem;
   }
 
+  /* PATTERN PAGE ********/
   .pattern-img-section {
     height: 480px;
     width: 70vw;
@@ -445,6 +446,7 @@
 /* BELOW 497px (Phones) */
 /* **************************** */
 @media (max-width: 30em) {
+  /* PATTERN PAGE ********/
   .pattern-img-section,
   .slider {
     height: 420px;
@@ -454,6 +456,7 @@
 /* BELOW 497px (Phones) */
 /* **************************** */
 @media (max-width: 26em) {
+  /* PATTERN PAGE ********/
   .pattern-img-section,
   .slider {
     height: 370px;
@@ -509,7 +512,6 @@
   .heading-pattern-section {
     font-size: 3rem;
   }
-
   .pattern-heading {
     font-size: 2.4rem;
     text-align: center;
@@ -523,6 +525,7 @@
     font-size: 1.2rem;
   }
 
+  /* PATTERN PAGE ********/
   .pattern-img-section,
   .slider {
     height: 325px;
