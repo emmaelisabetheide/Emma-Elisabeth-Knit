@@ -52,7 +52,7 @@
     margin-left: 0;
   }
   .pattern-img-section {
-    height: auto;
+    height: 475px;
     width: 35vw;
   }
   .slider {
@@ -270,6 +270,10 @@
   .pattern-info {
     grid-column: 1 / -1;
   }
+  .pattern-img-section,
+  .slider {
+    height: 500px;
+  }
   .pattern-img-section {
     display: flex;
     flex-direction: column;
@@ -280,12 +284,6 @@
   }
   .btn--with-icon {
     width: 80%;
-  }
-  .slider {
-    height: 500px;
-  }
-  .pattern-img-section {
-    height: 490px;
   }
 }
 
@@ -338,10 +336,10 @@
   .level-icon {
     height: 1.6rem;
   }
+
+  /* PATTERN PAGE ********/
+  .pattern-img-section,
   .slider {
-    height: 450px;
-  }
-  .pattern-img-section {
     height: 450px;
   }
 }
@@ -369,10 +367,9 @@
   .pattern-text--ps {
     margin-top: 5rem;
   }
+  /* PATTERN PAGE ********/
+  .pattern-img-section,
   .slider {
-    height: 390px;
-  }
-  .pattern-img-section {
     height: 390px;
   }
 }
@@ -423,11 +420,11 @@
   .str-p {
     font-size: 1rem;
   }
-
   .page-section--product {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
   .pattern-img-section {
     height: 480px;
     width: 70vw;
@@ -442,26 +439,24 @@
   .btn-prev {
     left: 6%;
   }
-
-  /* CONTACT SECTION ********/
-  .contact-heading {
-    font-size: 3.6rem;
-  }
-  .input-field {
-    width: 30rem;
-  }
-  .btn--contact {
-    width: 30rem;
-  }
 }
 
 /* **************************** */
-/* BELOW 491px (Phones) */
+/* BELOW 497px (Phones) */
 /* **************************** */
 @media (max-width: 30em) {
-  /* PRODUCT PAGE ********/
-  .pattern-img-section {
-    height: 40px;
+  .pattern-img-section,
+  .slider {
+    height: 420px;
+  }
+}
+/* **************************** */
+/* BELOW 497px (Phones) */
+/* **************************** */
+@media (max-width: 26em) {
+  .pattern-img-section,
+  .slider {
+    height: 370px;
   }
 }
 
@@ -514,9 +509,7 @@
   .heading-pattern-section {
     font-size: 3rem;
   }
-  .language-filter {
-    grid-template-columns: 1fr;
-  }
+
   .pattern-heading {
     font-size: 2.4rem;
     text-align: center;
@@ -530,18 +523,9 @@
     font-size: 1.2rem;
   }
 
-  /* CONTACT SECTION ********/
-  .contact-heading {
-    font-size: 2.4rem;
-  }
-  .input-field {
-    width: 25rem;
-  }
-  .btn--contact {
-    width: 25rem;
-  }
-  .contact-form {
-    gap: 1rem;
+  .pattern-img-section,
+  .slider {
+    height: 325px;
   }
 
   /* FOOTER SECTION ********/
