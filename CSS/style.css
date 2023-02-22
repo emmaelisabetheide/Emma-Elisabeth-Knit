@@ -583,8 +583,10 @@ header {
 .video-main-section {
   text-align: center;
 }
-.video-heading {
-  margin-bottom: 3rem;
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 .video-nav {
   display: flex;
@@ -604,17 +606,24 @@ header {
 }
 .video-nav--item:hover {
   color: #8a9378;
-  text-transform: uppercase;
 }
 .no-border {
   border: none;
 }
+.category {
+  margin-bottom: 15rem;
+}
 .video {
-  border: none;
+  border: 2px solid #8a9378;
   margin-bottom: 1rem;
+  padding: 1rem;
 }
 .video-title {
   color: #6d7856;
+  font-size: 1.8rem;
+}
+.video-heading {
+  margin-bottom: 3rem;
 }
 /* **************************** */
 /* EACH PRODUCT PAGE */
