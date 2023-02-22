@@ -575,67 +575,47 @@ header {
 }
 
 /* **************************** */
-/* CONTACT SECTION */
+/* KNITTING VIDEOES SECTION */
 /* **************************** */
-.contact-section {
-  background-color: #8a9378;
+.videos-page-heading {
+  text-align: center;
 }
-
-.contact-heading {
-  color: #fcfcfc;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
+.video-main-section {
+  text-align: center;
 }
-
-.contact-form {
-  gap: 2.4rem;
-  border: none;
-  background-color: none;
+.video-heading {
+  margin-bottom: 3rem;
 }
-
-.input-field {
-  padding: 1rem;
-  border: 1px solid #6d7856;
-  background-color: #e2e4dd;
-  width: 50rem;
-  color: #576045;
-}
-
-.input-field:focus {
-  outline: 1px solid #343a40;
+.video-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 3rem 3rem 1rem 3rem;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #fcfcfc;
 }
-
-.message-field {
-  font-family: sans-serif;
-  color: #576045;
-  resize: none;
-}
-
-.btn--contact {
-  width: 50rem;
-  padding: 1.6rem 3.6rem;
-  transition: all 0.2s;
-  cursor: pointer;
-  /* color */
+.video-nav--item {
   color: #6d7856;
-  box-shadow: 0 0 1rem rgba(67, 71, 57, 0.268);
-  background-color: #fcfcfc;
-  border: none;
-  /* text */
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid #7c8667;
   text-decoration: none;
 }
-
-.btn--contact:hover {
-  background-color: #e2e4dd;
+.video-nav--item:hover {
+  color: #8a9378;
+  text-transform: uppercase;
 }
-
-.ps {
-  color: #e2e4dd;
+.no-border {
+  border: none;
 }
-
+.video {
+  border: none;
+  margin-bottom: 1rem;
+}
+.video-title {
+  color: #6d7856;
+}
 /* **************************** */
 /* EACH PRODUCT PAGE */
 /* **************************** */
